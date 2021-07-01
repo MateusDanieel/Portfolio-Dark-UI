@@ -1,0 +1,61 @@
+.sec-header {
+    background: $dark-grey;
+    width: 100%;
+    
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+    
+    .wrapper {
+        text-align: center;
+
+        .funct {
+            font-size: 14px;
+            font-weight: 400;
+            font-style: italic;
+            background-color: rgba(0, 0, 0, .3);
+            padding: 10px 15px;
+            display: inline-block;
+            border-radius: 4px;
+            margin: 0;
+        }
+
+        .title {
+            font-size: 72px;
+            margin: 0;
+            //text-transform: uppercase;
+            font-weight: 600;
+            font-style: italic;
+        }
+
+        .intro {
+            font-size: 18px;
+            color: rgba(255, 255, 255, .8);
+            font-style: italic;
+            margin: 0 0 30px;
+        }
+
+        .bt {
+            background-color: rgba($blue, .8);
+            padding: 15px 25px;
+            border-radius: 4px;
+            text-transform: uppercase;
+            display: inline-block;
+            font-size: 16px;
+            font-weight: 400;
+            transition: 0.3s;
+
+            &:hover {
+                background-color: rgba($blue, 1);
+                transition: 0.3s;
+            }
+        }
+    }
+
+    
+
+}
