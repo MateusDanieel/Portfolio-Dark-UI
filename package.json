@@ -1,5 +1,5 @@
 {
-  "name": "template",
+  "name": "portfolio_dark_ui_by_mateus_daniel",
   "version": "1.0.0",
   "main": "index.js",
   "author": "Mateus Daniel da Silva",
@@ -32,5 +32,13 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "description": ""
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MateusDanieel/Portfolio-Dark-UI.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MateusDanieel/Portfolio-Dark-UI/issues"
+  },
+  "homepage": "https://github.com/MateusDanieel/Portfolio-Dark-UI#readme"
 }
