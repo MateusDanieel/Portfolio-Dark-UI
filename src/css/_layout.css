@@ -149,7 +149,8 @@
         display: flex;
 
         .esq, .dir {
-             width: 50%;
+            
+            width: 50%;
         }
         
         .esq {
