@@ -7,8 +7,8 @@ $dark-grey-alt: #25262D;
 $blue: #6473F4;
 $white: #FFF;
 
-@custom-media --xs (max-width: 576px);
-@custom-media --sm (max-width: 767px);
+@custom-media --xs (max-width: 767px);
+@custom-media --sm (max-width: 992px);
 @custom-media --md (max-width: 1024px);
 @custom-media --lg (max-width: 1200px);
 
@@ -73,6 +73,10 @@ section {
     font-weight: 500;
     position: relative;
     margin: 0 0 30px;
+
+    @media (--xs) {
+        text-align: center;
+    }
     
     &::before {
         content: '';
@@ -80,7 +84,8 @@ section {
         width: 50px;
         height: 5px;
         position: absolute;
-        top: -10px;
-        left: 0;
+        top: -5px;
+        left: 5px;
+        transform: skewX(-60deg);
     }
 }
