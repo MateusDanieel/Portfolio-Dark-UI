@@ -1,3 +1,86 @@
+.navbar {
+    background-color: $dark-grey;
+    padding: 30px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 1px 1px 10px $dark-grey-alt;
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logo {
+        font-size: 28px;
+        position: relative;
+        opacity: .8;
+        transition: 0.3s;
+
+        &:hover {
+            opacity: 1;
+        }
+
+        b {
+            font-weight: 600;
+        }
+
+        &::before {
+            content: '</>';
+            color: $blue;
+            font-weight: 600;
+        }   
+    }
+    
+    .menu {
+        display: flex;
+        
+        li {
+            display: inline-block;
+            position: relative;
+            margin-right: 30px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+                
+            a {
+                display: block;
+                font-size: 16px;
+                font-weight: 300;
+                text-transform: uppercase;
+                color: rgba($white, .8);
+                transition: 0.3s;
+
+                &::after {
+                    content: '';
+                    background-color: $blue;
+                    width: 100%;
+                    height: 2px;
+                    position: absolute;
+                    bottom: -5px;
+                    left: 0;
+                    opacity: 0;
+                    transition: 0.3s;
+
+                }
+
+                &:hover, &.active {
+                    color: rgba($white, 1);
+                    transition: 0.3s;
+
+                    &::after {
+                        opacity: 1;
+                        transition: 0.3s;
+                    }
+                }
+            }
+        }
+    }
+}
+    
 .sec-header {
     background: $dark-grey;
     width: 100%;
@@ -21,7 +104,7 @@
             padding: 10px 15px;
             display: inline-block;
             border-radius: 4px;
-            margin: 0;
+            margin: 0 0 10px;
         }
 
         .title {
@@ -36,18 +119,20 @@
             font-size: 18px;
             color: rgba(255, 255, 255, .8);
             font-style: italic;
-            margin: 0 0 30px;
+            margin: 20px 0;
+            font-weight: 400;
         }
 
         .bt {
             background-color: rgba($blue, .8);
-            padding: 15px 25px;
+            padding: 15px 30px;
             border-radius: 4px;
-            text-transform: uppercase;
+            //text-transform: uppercase;
             display: inline-block;
             font-size: 16px;
             font-weight: 400;
             transition: 0.3s;
+            font-style: italic;
 
             &:hover {
                 background-color: rgba($blue, 1);
@@ -55,7 +140,79 @@
             }
         }
     }
+}
 
-    
+.sec-sobre {
+    background-color: $dark-grey-alt;
 
+    .container {
+        display: flex;
+
+        .esq, .dir {
+             width: 50%;
+        }
+        
+        .esq {
+           
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+
+            figure {
+                max-width: 200px;
+                padding: 6px;
+                border: 3px solid rgba($blue, .8);
+                border-radius: 50%;
+                transition: 0.3s;
+
+                &:hover {
+                    border: 3px solid rgba($blue, 1);
+                }
+
+                img {
+                    max-width: 100%;
+                    border-radius: 50%;
+                }
+            }
+
+            .title {
+                margin: 0;
+                font-weight: 600;
+                font-style: italic;
+                opacity: .8;
+            }
+
+            .social {
+                margin-top: 20px;
+
+                li {
+                    display: inline-block;
+                    margin: 0 15px;
+
+                    a {
+                        display: block;
+                        opacity: .4;
+                        transition: 0.3s;
+
+                        &:hover {
+                            opacity: .8;
+                        }
+                    }
+                }
+            }
+        }
+
+        .dir {
+            .intro {
+                font-style: italic;
+                opacity: .8;
+            }
+        }
+    }
+}
+
+.footer {
+    text-align: center;
+    border-bottom: 2px solid $blue;
 }
