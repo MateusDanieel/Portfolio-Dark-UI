@@ -51,11 +51,11 @@ function css() {
 
 function js() {
     return src('src/js/**/*.js')
-
+/*
     .pipe(babel({
         presets:['@babel/env']
     }))
-
+*/
     .pipe(jsmin())
 
     .pipe(rename({

@@ -1,5 +1,4 @@
 // animação do texto principal do header
-
 (function() {
     var TxtType = function(el, toRotate, period) {
         this.toRotate = toRotate;
@@ -60,7 +59,6 @@
 })();
 
 // menu mobile
-
 (function() {
     var btn = document.querySelector('.hamburger');
     var menu = document.querySelector('.navbar .menu');
@@ -72,6 +70,17 @@
         } else {
             btn.classList.remove("is-active");
             menu.classList.remove("is-active");
+        }
+    });
+})();
+
+// scroll to top
+(function() {
+    document.addEventListener('scroll', function() {
+        if(document.documentElement.scrollTop > 100) {
+            document.querySelector('.scroll-to-top').classList.add('show');
+        } else {
+            document.querySelector('.scroll-to-top').classList.remove('show');
         }
     });
 })();

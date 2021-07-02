@@ -100,6 +100,36 @@ section {
     }
 }
 
+.scroll-to-top {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    padding: 10px;
+    background-color: rgba($black, .3);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s;
+
+    i {
+        color: rgba($white, .8);
+    }
+    
+    &:hover {
+        background-color: rgba($black, .5);
+
+        i {
+            color: rgba($white, 1);
+        }
+    }
+    
+    &.show {
+        display: block;
+        visibility: visible;
+        opacity: 1;
+        transition: 0.3s;
+    }
+}
+
 .only-desktop {
     display: block !important;
 
