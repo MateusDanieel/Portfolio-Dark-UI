@@ -58,3 +58,20 @@
         document.body.appendChild(css);
     };
 })();
+
+// menu mobile
+
+(function() {
+    var btn = document.querySelector('.hamburger');
+    var menu = document.querySelector('.navbar .menu');
+
+    btn.addEventListener('click', function() {
+        if(btn.className == 'hamburger hamburger--spin') {
+            btn.classList.add("is-active");
+            menu.classList.add("is-active");
+        } else {
+            btn.classList.remove("is-active");
+            menu.classList.remove("is-active");
+        }
+    });
+})();
