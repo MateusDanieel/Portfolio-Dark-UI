@@ -288,6 +288,135 @@
     }
 }
 
+.sec-stacks {
+    background-color: $dark-grey;
+
+    .legenda {
+        display: flex;
+        flex-wrap: wrap;
+        border: 2px solid rgba($black, .2);
+        padding: 10px 20px;
+        border-radius: 8px;
+        font-style: italic;
+
+        .title {
+            @media (--xs) {
+                display: block;
+                width: 100%;
+            }
+        }
+
+        .level {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 0 0 0 35px;
+
+            @media (--xs) {
+                padding: 0 0 0 14px;
+                margin-right: 21px;
+            }
+
+            &::before {
+                content: '';
+                width: 7px;
+                height: 7px;
+                border-radius: 50%;
+                position: absolute;
+                left: 21px;
+                margin-right: 20px;
+                
+                @media (--xs) {
+                    left: 0;
+                }
+            }
+
+            &.low {
+                &::before {
+                    background-color: $yellow;
+                }
+            }
+
+            &.medium {
+                &::before {
+                    background-color: $blue;
+                }
+            }
+
+            &.high {
+                &::before {
+                    background-color: $green;
+                }
+            }
+        }
+    }
+
+    .wrapper {
+        display: flex;
+        flex-wrap: wrap;
+
+        .col {
+            width: calc(100% / 4);
+            text-align: center;
+            color: $white;
+            opacity: .4;
+            transition: 0.3s;
+            margin: 60px 0 0;
+
+            @media (--sm) {
+                width: calc(100% / 2);
+            }
+            
+            @media (--xs) {
+                width: 100%;
+            }
+
+            &:hover {
+                opacity: .8;
+            }
+
+            .title {
+                font-weight: 400;
+                font-style: italic;
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                &::before {
+                    content: '';
+                    width: 7px;
+                    height: 7px;
+                    border-radius: 50%;
+                    margin-right: 10px;
+                }
+
+                &.low {
+                    &::before {
+                        background-color: $yellow;
+                    }
+                }
+
+                &.medium {
+                    &::before {
+                        background-color: $blue;
+                    }
+                }
+
+                &.high {
+                    &::before {
+                        background-color: $green;
+                    }
+                }
+
+                
+                    
+            }
+        }
+    }
+}
+
 .footer {
     text-align: center;
     border-bottom: 2px solid $blue;

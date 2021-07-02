@@ -6,6 +6,10 @@ $dark-grey: #2D2E32;
 $dark-grey-alt: #25262D;
 $blue: #6473F4;
 $white: #FFF;
+$red: #FF4F4F;
+$green: #64F4AC;
+$yellow: #F7D387;
+$black: #000;
 
 @custom-media --xs (max-width: 767px);
 @custom-media --sm (max-width: 992px);
@@ -73,6 +77,12 @@ section {
     font-weight: 500;
     position: relative;
     margin: 0 0 30px;
+    opacity: .8;
+    transition: 0.3s;
+
+    &:hover {
+        opacity: 1;
+    }
 
     @media (--xs) {
         text-align: center;
@@ -87,5 +97,21 @@ section {
         top: -5px;
         left: 5px;
         transform: skewX(-60deg);
+    }
+}
+
+.only-desktop {
+    display: block !important;
+
+    @media (--xs) {
+        display: none !important;
+    }
+}
+
+.only-mobile {
+    display: none !important;
+    
+    @media (--xs) {
+        display: block !important;
     }
 }
