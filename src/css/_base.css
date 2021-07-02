@@ -16,18 +16,7 @@ $black: #000;
 @custom-media --md (max-width: 1024px);
 @custom-media --lg (max-width: 1200px);
 
-* {
-    font-family: 'IBM Plex Mono', monospace;
-    color: $white;
-    box-sizing: border-box;    
-}
-
-html {
-    scroll-behavior: smooth;
-    position: relative;
-    background: $dark-grey;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-
+%scrollbar {
     &::-webkit-scrollbar {
         width: 10px;
     }
@@ -43,6 +32,21 @@ html {
             background: rgba($white, .1); 
         }
     }
+}
+
+* {
+    font-family: 'IBM Plex Mono', monospace;
+    color: $white;
+    box-sizing: border-box;    
+}
+
+html {
+    scroll-behavior: smooth;
+    position: relative;
+    background: $dark-grey;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+    @extend %scrollbar;
 }
 
 body {
@@ -106,6 +110,7 @@ section {
     bottom: 20px;
     padding: 10px;
     background-color: rgba($black, .3);
+    z-index: 999;
     visibility: hidden;
     opacity: 0;
     transition: 0.3s;

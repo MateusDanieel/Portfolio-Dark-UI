@@ -56,7 +56,7 @@ function js() {
         presets:['@babel/env']
     }))
 */
-    .pipe(jsmin())
+    //.pipe(jsmin())
 
     .pipe(rename({
         extname:'.min.js'
