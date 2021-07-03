@@ -62,6 +62,7 @@
 (function() {
     var btn = document.querySelector('.hamburger');
     var menu = document.querySelector('.navbar .menu');
+    var items = document.querySelectorAll('.navbar .menu li a');
 
     btn.addEventListener('click', function() {
         if(btn.className == 'hamburger hamburger--spin') {
@@ -72,6 +73,14 @@
             menu.classList.remove("is-active");
         }
     });
+
+    items.forEach(function(el, i, arr) {
+        el.addEventListener('click', function() {
+            btn.classList.remove("is-active");
+            menu.classList.remove("is-active");
+        });
+    });
+
 })();
 
 // scroll to top

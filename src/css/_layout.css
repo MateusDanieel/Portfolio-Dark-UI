@@ -65,11 +65,10 @@
             margin: 0;
             max-height: 0;
             overflow: hidden;
-            transition: 0.5s;
+            transition: 1s;
             
             &.is-active {
                 max-height: 100vh;
-                transition: 0.5s;
             }
         }
         
