@@ -38,6 +38,7 @@ $black: #000;
     font-family: 'IBM Plex Mono', monospace;
     color: $white;
     box-sizing: border-box;    
+    
 }
 
 html {
