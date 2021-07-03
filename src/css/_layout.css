@@ -419,13 +419,114 @@
 
 .sec-portfolio {
     background-color: $dark-grey-alt;
+
+    .wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .col {
+        width: calc(95% / 3);
+        background-color: rgba(0, 0, 0, .1);
+        height: -fit-content;
+        padding: 30px;
+        border-radius: 4px;
+        position: relative;
+        overflow: hidden;
+        transition: 0.3s;
+        box-shadow: 2px 2px 10px #1F1F1F;
+        margin: 0 0 30px;
+
+        @media (--sm) {
+            width: calc(95% / 2);
+        }
+
+        @media (--xs) {
+            width: 100%;
+        }
+
+        &:hover {
+            background-color: rgba(0, 0, 0, .2);
+
+            img {
+                filter: grayscale(0);
+                opacity: .7;
+                transition: 0.3s;
+            }
+            
+            .title, .intro, .intro b {
+                color: rgba($white, 1);
+                transition: 0.3s;
+            }
+        }
+
+        img {
+            max-width: 100%;
+            border-radius: 4px;
+            filter: grayscale(100%);
+            opacity: .4;
+            transition: 0.3s;
+        }
+
+        .title {
+            font-size: 24px;
+            //text-transform: uppercase;
+            text-align: center;
+            font-weight: 600;
+            font-style: italic;
+            color: rgba($white, .8);
+            transition: 0.3s;
+
+            @extend %lineclamp;
+        }
+
+        .intro {
+            font-size: 18px;
+            font-style: italic;
+            text-align: center;
+            color: rgba($white, .8);
+            transition: 0.3s;
+
+            b {
+                font-weight: 500;
+                color: rgba($white, .8);
+                text-transform: uppercase;
+                font-style: normal;
+                transition: 0.3s;
+            }
+        }
+    
+        a {
+            display: block;
+            text-align: center;
+            background-color: rgba(0, 0, 0, .2);
+            color: rgba($white, .8);
+            padding: 15px 30px;
+            //text-transform: uppercase;
+            font-style: italic;
+            //font-weight: 500;
+            margin: 20px 0 0;
+            font-size: 18px;
+            border-radius: 4px;
+            
+            transition: 0.3s;
+
+            &:hover {
+                background-color: $blue;
+                color: rgba($white, 1);
+            }
+        }
+
+
+        
+    }
 }
 
 .sec-timeline {
     background-color: $dark-grey;
 }
-
-
 
 .sec-contato {
     background-color: $dark-grey-alt;
@@ -569,9 +670,7 @@
             text-align: center;
             display: none;
         }
-    }
-
-    
+    }    
 }
 
 .footer {
