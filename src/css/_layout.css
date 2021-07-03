@@ -557,6 +557,85 @@
 
 .sec-timeline {
     background-color: $dark-grey;
+
+    .wrapper {
+        width: 50%;
+        margin: 0 auto;
+        position: relative;
+
+        @media (--xs) {
+            width: 100%;
+            padding: 0 0 0 12px;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 4px;
+            height: 100%;
+            background-color: $blue;
+
+            @media (--xs) {
+                left: 12px;
+            }
+        }
+    }
+
+    .item {
+        background-color: rgba($black, .1);
+        padding: 30px;
+        margin: 20px 0 20px 40px;
+        position: relative;
+        transition: 0.3s;
+
+        &::before {
+           content: '';
+            display: block;
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: $dark-grey;
+            border: 4px solid $blue;
+            border-radius: 50%;
+            left: -52px;
+            top: 40px;
+        }
+        
+        &::after {
+            content: '';
+            display: block;
+            position: absolute;
+            border: 10px solid;
+            border-color: transparent #28292D transparent transparent;
+            left: -20px;
+            top: 44px;
+        }
+        
+        .year {
+            font-size: 32px;
+            margin: 0;
+            opacity: .8;
+            transition: 0.3s;
+        }
+
+        .intro {
+            font-style: italic;
+            opacity: .8;
+            transition: 0.3s;
+        }
+        
+        &:hover {
+            box-shadow: 5px 5px 20px #1F1F1F;
+
+            .year, .intro {
+                opacity: 1;
+                
+            }
+        }
+            
+    }
 }
 
 .sec-contato {
