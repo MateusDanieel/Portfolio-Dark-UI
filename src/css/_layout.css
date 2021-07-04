@@ -270,8 +270,12 @@
                 display: flex;
                 justify-content: space-around;
                 width: 100%;
-                max-width: 375px;
+                max-width: 450px;
                 margin-top: 20px;
+
+                @media (--xs) {
+                    max-width: 100%;
+                }
 
                 li {
                     display: inline-block;
