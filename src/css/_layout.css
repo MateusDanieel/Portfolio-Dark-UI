@@ -147,6 +147,16 @@
         justify-content: center;
         align-items: center;
         min-height: 100vh;
+
+        @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+            padding: 20% 0 0;
+
+            .title {
+                &::after {
+                    content: 'Mateus Daniel';
+                }
+            }
+        }
     }
     
     .wrapper {
@@ -241,6 +251,11 @@
                 img {
                     max-width: 100%;
                     border-radius: 50%;
+                }
+                
+                @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+                    border: 0 !important;
+                    max-height: 200px;
                 }
             }
 
@@ -702,31 +717,7 @@
                         
                         i {
                             opacity: 1;
-/*
-                            &.fa-bitbucket {
-                                color: #fafafa;
-                            }
 
-                            &.fa-codepen {
-                                color: #fafafa;
-                            }
-
-                            &.fa-github {
-                                color: #fafafa;
-                            }
-
-                            &.fa-linkedin-in {
-                                color: #00a0dc;
-                            }
-
-                            &.fa-stack-overflow {
-                                color: #f48024;
-                            }
-                            
-                            &.fa-twitter {
-                                color: #1da1f2;
-                            }
-*/
                         }
                     }
                 }
