@@ -1,3 +1,16 @@
+// ano/idade dinamico
+
+(function() {
+    var today = new Date();
+    var year = today.getFullYear();
+    var age = document.getElementById("js-age");
+    var yearCopy = document.getElementById("js-year");
+    
+    age.innerHTML = year - 1997;
+    yearCopy.innerHTML = year;
+
+})();
+
 // animação do texto principal do header
 (function() {
     var TxtType = function(el, toRotate, period) {

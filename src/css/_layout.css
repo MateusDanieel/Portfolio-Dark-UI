@@ -65,7 +65,7 @@
             margin: 0;
             max-height: 0;
             overflow: hidden;
-            transition: 1s;
+            transition: 0.5s;
             
             &.is-active {
                 max-height: 100vh;
@@ -125,7 +125,7 @@
                     transition: 0.3s;
 
                     @media (--xs) {
-                        background-color: $blue;
+                        color: $white;
                     }
 
                     &::after {
@@ -536,21 +536,6 @@
             }
         }
 
-        @media (--sm) {
-            background-color: rgba(0, 0, 0, .2);
-
-            img {
-                filter: grayscale(0);
-                opacity: 1;
-                transition: 0.3s;
-            }
-            
-            .title, .intro, .intro b {
-                color: rgba($white, 1);
-                transition: 0.3s;
-            }
-        }
-        
     }
 }
 
@@ -589,6 +574,10 @@
         position: relative;
         transition: 0.3s;
 
+        @media (--sm) {
+            padding: 20px;
+        }
+
         &::before {
            content: '';
             display: block;
@@ -623,6 +612,10 @@
             font-style: italic;
             opacity: .8;
             transition: 0.3s;
+
+            @media (--sm) {
+                font-size: 14px;
+            }
         }
         
         &:hover {
