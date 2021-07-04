@@ -7,7 +7,5 @@ ABRINDO NO DESKTOP:
 1 - Abra o 'Terminal' (ou CMD, Git Bash, etc.) e execute o comando `npm install` ou `npm i` e aguarde;<br>
 2 - Execute o 'Gulp' através do comando `gulp`;
 
-DESENVOLVIDO POR:
-
-MATEUS DANIEL<br>
+DESENVOLVIDO POR MATEUS DANIEL<br>
 https://mateusdanieel.github.io/
