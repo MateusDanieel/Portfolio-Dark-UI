@@ -3,16 +3,20 @@
 
 <head>
   <meta charset="utf-8">
-  <title>ERRO 404</title>
+  <title>404 NOT FOUND</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@1,400;1,700&display=swap" rel="stylesheet">
   <style>
     * {
-      line-height: 1.2;
       margin: 0;
+      font-family: 'IBM Plex Mono', monospace;
     }
 
     html {
-      color: #888;
+      background-color: #2D2E32;
+      color: #FFF;
       display: table;
       font-family: sans-serif;
       height: 100%;
@@ -24,38 +28,74 @@
       display: table-cell;
       vertical-align: middle;
       margin: 2em auto;
+      padding: 0 20px;
     }
 
     h1 {
-      color: #555;
-      font-size: 2em;
-      font-weight: 400;
+      color: #FFF;
+      font-size: 72px;
+      font-weight: 700;
+    }
+
+    h1 > span {
+      font-family: Arial, Helvetica, sans-serif;
     }
 
     p {
-      margin: 0 auto;
-      width: 280px;
+      margin: 20px auto 40px;
     }
 
-    @media only screen and (max-width: 280px) {
+    .bt {
+      background-color: #6473F4;
+      color: #FFF;
+      text-decoration: none;
+      padding: 15px 30px;
+      border-radius: 4px;
+      display: inline-block;
+      font-size: 16px;
+      font-weight: 400;
+      transition: 0.3s;
+      font-style: italic;
+      opacity: .8;
+    }
 
-      body,
-      p {
-        width: 95%;
-      }
+    .bt:hover {
+        opacity: 1;
+    }
+    
+    .mail {
+      color: #FFF;
+    }
+
+    @media only screen and (max-width: 767px) {
 
       h1 {
-        font-size: 1.5em;
-        margin: 0 0 0.3em;
+        font-size: 60px;
       }
 
+      p {
+        margin: 20px auto 40px;
+        width: 95%;
+        font-size: 14px;
+      }
+      
     }
   </style>
 </head>
 
 <body>
-  <h1>PÁGINA NÃO ENCONTRADA</h1>
-  <p>Desculpe, mas a página que você está tentando visualizar não existe.</p>
+  <h1>OOPS! <span>:(</span></h1>
+  
+  <p>
+    Parece que a página que você está tentando acessar está indisponível ou não existe. <br />
+    Tente novamente mais tarde, ou caso o erro persista me envie uma mensagem <a href="mailto:mateusdaniel.dev@gmail.com" target="_blank" class="mail">clicando aqui</a>. <br /><br />
+    <small>CÓD. ERRO: 404</small>
+  </p>
+
+  <a href="./" class="bt">
+    Voltar ao Início
+  </a>
+
 </body>
 
 </html>
