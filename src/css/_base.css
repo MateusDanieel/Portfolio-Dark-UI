@@ -116,6 +116,7 @@ section {
 
     @media (--xs) {
         text-align: center;
+        font-size: 36px;
     }
     
     &::before {
@@ -127,6 +128,17 @@ section {
         top: -5px;
         left: 5px;
         transform: skewX(-60deg);
+
+        @media (--xs) {
+            margin: 0 auto;
+            left: 0;
+            right: 0;
+            bottom: -10px;
+            top: inherit;
+            transform: none;
+            width: 80px;
+            height: 2px;
+        }
     }
 }
 
