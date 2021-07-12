@@ -486,6 +486,11 @@
         &:last-child {
             margin-right: auto;
             margin-left: 2.5%;
+
+            @media (--xs) {
+                margin-right: auto;
+                margin-left: auto;
+            }
         }
             
         &:hover {
