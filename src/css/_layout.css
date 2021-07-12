@@ -482,17 +482,7 @@
         @media (--xs) {
             width: 100%;
         }
-
-        &:last-child {
-            margin-right: auto;
-            margin-left: 2.5%;
-
-            @media (--xs) {
-                margin-right: auto;
-                margin-left: auto;
-            }
-        }
-            
+                    
         &:hover {
             background-color: rgba(0, 0, 0, .2);
 
