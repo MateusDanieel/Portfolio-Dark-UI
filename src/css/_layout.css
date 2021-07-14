@@ -515,7 +515,7 @@
             color: rgba($white, .8);
             transition: 0.3s;
 
-            @extend %lineclamp;
+            @extend %lineclamp1;
         }
 
         .intro {
@@ -524,6 +524,8 @@
             text-align: center;
             color: rgba($white, .8);
             transition: 0.3s;
+
+            @extend %lineclamp2;
 
             b {
                 font-weight: 500;
