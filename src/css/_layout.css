@@ -599,6 +599,7 @@
         padding: 30px;
         margin: 20px 0 20px 40px;
         position: relative;
+        border-radius: 4px;
         transition: 0.3s;
 
         @media (--sm) {
