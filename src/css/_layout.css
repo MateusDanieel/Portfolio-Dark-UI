@@ -482,11 +482,8 @@
         font-style: italic;
         margin: 0 0 30px;
 
-        .title {
-            @media (--xs) {
-                display: block;
-                width: 100%;
-            }
+        p {
+            
         }
 
     }
@@ -819,7 +816,7 @@
             }
         }
 
-        #my-form-status {
+        .my-form-status {
             font-style: italic;
             padding: 10px 20px;
             background-color: rgba($black, .2);

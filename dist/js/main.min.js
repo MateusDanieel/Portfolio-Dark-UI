@@ -96,14 +96,15 @@
 
 // e-mail
 
-var msg = document.getElementById("my-form-status");
+var msgSucess = document.querySelector(".my-form-status.sucess");
+var msgError = document.querySelector(".my-form-status.error");
 var form = document.getElementById("my-form");
 
 function enviarEmail() {
     
     async function handleSubmit(event) {
         event.preventDefault();
-        var status = document.getElementById("my-form-status");
+        var status = document.querySelector(".my-form-status");
         var data = new FormData(event.target);
         fetch(event.target.action, {
         method: form.method,
@@ -112,12 +113,12 @@ function enviarEmail() {
             'Accept': 'application/json'
         }
         }).then(response => {
-        msg.style.display = "block";
-        status.innerHTML = "Mensagem enviada com sucesso!";
+        msgSucess.style.display = "block";
+        msgError.style.display = "none";
         form.reset()
         }).catch(error => {
-        msg.style.display = "block";
-        status.innerHTML = "Oops! Não foi possível enviar sua mensagem, tente novamente mais tarde."
+            msgSucess.style.display = "none";
+            msgError.style.display = "block";
         });
     }
     form.addEventListener("submit", handleSubmit)
