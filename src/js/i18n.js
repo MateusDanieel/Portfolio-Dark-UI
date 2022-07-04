@@ -19,6 +19,7 @@ $.i18n().load({
         'menu_portfolio': 'Portfólio',
         'menu_timeline': 'Timeline',
         'menu_contato': 'Contato',
+        'menu_i18n': 'EN',
 
         // HEADER
         'header_funct': 'Front-End Developer',
@@ -143,6 +144,7 @@ $.i18n().load({
         'menu_portfolio': 'Portfolio',
         'menu_timeline': 'Timeline',
         'menu_contato': 'Contact',
+        'menu_i18n': 'PT',
 
         // HEADER
         'header_funct': 'Front-End Developer',
@@ -272,19 +274,53 @@ function changeLocale(locale) {
 
 }
 
-$(function() {
+$(function () {
 
-    $('button').on('click', function() {
+    var lang = document.querySelector('html');
+    var inputEmail = document.querySelector('.sec-contato input[type=email]');
+    var textarea = document.querySelector('.sec-contato textarea');
+    var btMenu = document.getElementById('bt-transl');
 
+    btMenu.setAttribute('data-locale', 'br');
+    
+    $('.lang__bt').on('click', function() {
         var locale = $(this).data('locale');
-        var lang = document.querySelector('html');
-
-        locale == 'br' ? 
-        lang.setAttribute('lang', 'pt-br') : 
-        lang.setAttribute('lang', 'en-US');
+        
+        if(locale == 'br') {
+            lang.setAttribute('lang', 'pt-br');
+            inputEmail.setAttribute('placeholder', 'Seu e-mail');
+            textarea.setAttribute('placeholder', 'Escreva sua mensagem ...');
+            btMenu.setAttribute('data-locale', 'en');
+        } else {
+            lang.setAttribute('lang', 'en-US');
+            inputEmail.setAttribute('placeholder', 'Your email');
+            textarea.setAttribute('placeholder', 'Your message ...');
+            btMenu.setAttribute('data-locale', 'br');
+        }
 
         changeLocale(locale);
     });
+
+    
+    $(btMenu).on('click', function() {
+        
+        if(lang.getAttribute('lang') != 'pt-br') {
+            lang.setAttribute('lang', 'pt-br');
+            btMenu.setAttribute('data-locale', 'en');
+            inputEmail.setAttribute('placeholder', 'Seu e-mail');
+            textarea.setAttribute('placeholder', 'Escreva sua mensagem ...');
+            
+            changeLocale('br');
+        } else {
+            lang.setAttribute('lang', 'en-US');
+            btMenu.setAttribute('data-locale', 'br');
+            inputEmail.setAttribute('placeholder', 'Your email');
+            textarea.setAttribute('placeholder', 'Your message ...');
+
+            changeLocale('en');
+        }
+    });
+    
 
 });
 

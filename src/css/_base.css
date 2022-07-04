@@ -16,19 +16,7 @@ $black: #000;
 @custom-media --md (max-width: 1024px);
 @custom-media --lg (max-width: 1200px);
 
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-    #js-year {
-        &::after {
-            content: '2021';
-        }
-    }
-    
-    #js-age {
-        &::after {
-            content: '24';
-        }
-    }
-    
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {    
     html {
         overflow-x: hidden;
     }

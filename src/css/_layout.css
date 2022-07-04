@@ -137,28 +137,6 @@
         }
     }
 
-    .lang {
-        position: absolute;
-        right: 20px;
-        top: 0;
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        height: 100%;
-
-        &__bt {
-            background-color: transparent;
-            border: 0;
-            width: 50px;
-            height: 34px;
-            cursor: pointer;
-
-            svg {
-                max-width: 100%;
-                max-height: 100%;
-            }
-        }
-    }
 }
     
 .sec-header {
@@ -832,6 +810,27 @@
 .footer {
     text-align: center;
     border-bottom: 5px solid $blue;
+
+    .lang {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        padding: 20px 0 0;
+
+        &__bt {
+            background-color: transparent;
+            border: 0;
+            width: 50px;
+            height: 34px;
+            cursor: pointer;
+
+            svg {
+                max-width: 100%;
+                max-height: 100%;
+            }
+        }
+    }
 
     .intro {
         margin: 0;
