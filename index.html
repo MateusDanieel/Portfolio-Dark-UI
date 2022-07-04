@@ -36,32 +36,28 @@
     
             <ul class="menu">
                 <li>
-                    <a href="#sobre">
-                        Sobre
-                    </a>
+                    <a href="#sobre" data-i18n="menu_sobre"></a>
                 </li>
 
                 <li>
-                    <a href="#stacks">
-                        Stacks
-                    </a>
+                    <a href="#stacks" data-i18n="menu_stacks"></a>
                 </li>
     
                 <li>
-                    <a href="#portfolio">
-                        Portfólio
-                    </a>
+                    <a href="#portfolio" data-i18n="menu_portfolio"></a>
                 </li>
 
                 <li>
-                    <a href="#timeline">
-                        Timeline
-                    </a>
+                    <a href="#timeline" data-i18n="menu_timeline"></a>
                 </li>
     
                 <li>
-                    <a href="#contato">
-                        Contato
+                    <a href="#contato" data-i18n="menu_contato"></a>
+                </li>
+
+                <li>
+                    <a href="javascript:void(0);" id="bt-transl" data-i18n="menu_i18n" data-locale="en">
+
                     </a>
                 </li>
             </ul>
@@ -75,20 +71,20 @@
         <div class="container">
 
             <div class="wrapper">
-                <h3 class="funct">Front-End Developer</h3>
+                <h3 class="funct" data-i18n="header_funct"></h3>
 
                 <h1 class="title typewrite" data-period="2000" data-type='[ "Mateus Daniel" ]'></h1>
 
-                <h2 class="intro">Desenvolvedor web front-end de São Paulo - SP.</h2>
+                <h2 class="intro" data-i18n="header_intro"></h2>
 
-                <a href="#sobre" class="bt">
-                    Saiba Mais
-                </a>
+                <a href="#sobre" class="bt" data-i18n="header_bt"></a>
             </div>
 
         </div>
         
     </header>
+    
+
 
     <section class="sec-sobre" id="sobre">
         
@@ -99,7 +95,7 @@
                     <img src="dist/img/profile.jpg" alt="" />
                 </figure>
 
-                <h2 class="title">Mateus Daniel</h2>
+                <h2 class="title" data-i18n="sobre_title"></h2>
 
                 <ul class="social">
                     <li>
@@ -160,17 +156,19 @@
             </div>
 
             <div class="dir">
-                <h1 class="sec-title">Quem Sou Eu?</h1>
+                <h1 class="sec-title"  data-i18n="sobre_sec_title"></h1>
 
-                <p class="intro">
-                    Muito prazer, meu nome é Mateus Daniel, tenho <span id="js-age"></span> anos, nascido e criado na cidade de São Paulo - SP.<br /><br />
+                <p class="intro" data-i18n="sobre_intro_um"></p>
 
-                    Sou formado como Técnico em Informática (o curso atualmente é conhecido como Técnico em Desenvolvimento de Sistemas) pela Escola Técnica Estadual de São Paulo - ETEC, desde 2017, com especialização em Desenvolvimento de Aplicativos para Smartphones em 2020.<br /><br />
-
-                    Apaixonado por desenvolvimento front-end, procuro estudar constantemente para aprimorar meus conhecimentos. Nos últimos anos venho trabalhando na criação e manutenção de layouts para sistemas on-line, criação e manutenção de páginas para a internet em geral (páginas institucionais, landing pages, etc.), e-mails marketing e templates com stack voltado para HTML5, CSS3, JavaScript e Frameworks diversos.<br /><br />
-
-                    Atualmente trabalho para a agência <b>Tritone Interactive</b>.
+                <p class="intro" data-i18n="sobre_intro_dois">
                 </p>
+
+                <p class="intro" data-i18n="sobre_intro_tres">
+                </p>
+
+                <p class="intro" data-i18n="sobre_intro_quatro">
+                </p>
+                
             </div>
 
         </div>
@@ -180,96 +178,94 @@
     <section class="sec-stacks" id="stacks">
         
         <div class="container">
-            <h1 class="sec-title">
-                Stacks & Skills
-            </h1>
+            <h1 class="sec-title" data-i18n="stacks_title"></h1>
 
             <div class="legenda">
-                <span class="title">Nível de Conhecimento:</span> 
-                <span class="level low">Básico</span> 
-                <span class="level medium">Intermediário</span> 
-                <span class="level high">Avançado</span>
+                <span class="title" data-i18n="stacks_legenda_title"></span> 
+                <span class="level low" data-i18n="stacks_legenda_level_low"></span> 
+                <span class="level medium" data-i18n="stacks_legenda_level_medium"></span> 
+                <span class="level high" data-i18n="stacks_legenda_level_high"></span>
             </div>
 
             <ul class="wrapper">
                 <li class="col">
                     <i class="fab fa-html5 fa-6x"></i>
-                    <h3 class="title high">HTML5</h3>
+                    <h3 class="title high" data-i18n="stacks_html"></h3>
                 </li>
 
                 <li class="col">
                     <i class="fab fa-css3-alt fa-6x"></i>
-                    <h3 class="title high">CSS3</h3>
+                    <h3 class="title high" data-i18n="stacks_css"></h3>
                 </li>
 
                 <li class="col">
                     <i class="fab fa-js-square fa-6x"></i>
-                    <h3 class="title medium">JavaScript</h3>
+                    <h3 class="title medium" data-i18n="stacks_js"></h3>
                 </li>
 
                 <li class="col">
                     <i class="fab fa-sass fa-6x"></i>
-                    <h3 class="title medium">Sass/SCSS</h3>
+                    <h3 class="title medium" data-i18n="stacks_sass_scss"></h3>
                 </li>
 
                 <li class="col">
                     <i class="fab fa-bootstrap fa-6x"></i>
-                    <h3 class="title high">Bootstrap</h3>
+                    <h3 class="title high" data-i18n="stacks_bootstrap"></h3>
                 </li>
 
                 <li class="col">
                     <i class="fas fa-code fa-6x"></i>
-                    <h3 class="title low">Dart/Flutter</h3>
+                    <h3 class="title low" data-i18n="stacks_dart_flutter"></h3>
                 </li>
 
                 <li class="col">
                     <i class="fab fa-yarn fa-6x"></i>
-                    <h3 class="title low">Package Managers</h3>
+                    <h3 class="title low" data-i18n="stacks_package_managers"></h3>
                 </li>
 
                 <li class="col">
                     <i class="fab fa-gulp fa-6x"></i>
-                    <h3 class="title low">Task Runners</h3>
+                    <h3 class="title low" data-i18n="stacks_task_runners"></h3>
                 </li>
 
                 <li class="col">
                     <i class="fab fa-git-alt fa-6x"></i>
-                    <h3 class="title medium">GIT - Versionamento</h3>
+                    <h3 class="title medium" data-i18n="stacks_git"></h3>
                 </li>
 
                 <li class="col">
                     <i class="fas fa-file-code fa-6x"></i>
-                    <h3 class="title medium">IDE's/Text Editors</h3>
+                    <h3 class="title medium" data-i18n="stacks_ide"></h3>
                 </li>
 
                 <li class="col">
                     <i class="fab fa-trello fa-6x"></i>
-                    <h3 class="title medium">Métodos Ágeis</h3>
+                    <h3 class="title medium" data-i18n="stacks_agile"></h3>
                 </li>
 
                 <li class="col">
                     <i class="fas fa-object-group fa-6x"></i>
-                    <h3 class="title medium">Adobe XD</h3>
+                    <h3 class="title medium" data-i18n="stacks_xd"></h3>
                 </li>
 
                 <li class="col">
                     <i class="fas fa-fill-drip fa-6x"></i>
-                    <h3 class="title medium">Photoshop</h3>
+                    <h3 class="title medium" data-i18n="stacks_photoshop"></h3>
                 </li>
 
                 <li class="col">
                     <i class="fas fa-film fa-6x"></i>
-                    <h3 class="title low">Edição de Vídeo</h3>
+                    <h3 class="title low" data-i18n="stacks_video"></h3>
                 </li>
 
                 <li class="col">
                     <i class="fas fa-tools fa-6x"></i>
-                    <h3 class="title medium">Hardware</h3>
+                    <h3 class="title medium" data-i18n="stacks_hardware"></h3>
                 </li>
 
                 <li class="col">
                     <i class="fas fa-crop fa-6x"></i>
-                    <h3 class="title low">UX/UI Design</h3>
+                    <h3 class="title low" data-i18n="stacks_ux_ui_design"></h3>
                 </li>
             </ul>
 
@@ -280,16 +276,13 @@
     <section class="sec-portfolio" id="portfolio">
         
         <div class="container">
-            <h1 class="sec-title">
-                Portfólio
-            </h1>
+            <h1 class="sec-title" data-i18n="portfolio_title"></h1>
 
             <div class="legenda">
-                <span class="title">
-                    * OBS: Por razões contratuais, a grande maioria dos projetos que desenvolvi e/ou participei não foram listados aqui. Pelo mesmo motivo, alguns projetos foram listados sem o código fonte disponível para consulta.<br /><br />
-
-                    * OBS²: Algumas imagens foram ocultadas para preservar o sigilo de informações ainda não divulgadas ao público pelo cliente.
-                </span>
+                <p data-i18n="portfolio_legenda_one"></p>
+                
+                <p data-i18n="portfolio_legenda_two"></p>
+                    
             </div>
 
             <div class="wrapper">
@@ -299,17 +292,16 @@
 
                     <h2 class="title">Pitylu Kids <small>&copy;</small> (TCC)</h2>
 
-                    <p class="intro"><b>Período:</b> 2016 - 2017</p>
+                    <p class="intro"><b data-i18n="portfolio_periodo"></b> 2016 - 2017</p>
 
-                    <p class="intro"><b>Stacks:</b> HTML, CSS, JS, jQuery, PHP, UX/UI</p>
+                    <p class="intro">
+                        <b data-i18n="portfolio_stacks"></b> 
+                        HTML, CSS, JS, jQuery, PHP, UX/UI
+                    </p>
 
-                    <a href="./dist/img/2017_TCC_PTL_INDEX.png" target="_blank">
-                        Demonstração
-                    </a>
+                    <a href="./dist/img/2017_TCC_PTL_INDEX.png" target="_blank" data-i18n="portfolio_demo"></a>
 
-                    <a href="https://github.com/MateusDanieel/tcc-etec-ptl" target="_blank">
-                        Source Code
-                    </a>
+                    <a href="https://github.com/MateusDanieel/tcc-etec-ptl" target="_blank" data-i18n="portfolio_source_code"></a>
                 </div>
                 
                 <div class="col">
@@ -317,17 +309,19 @@
 
                     <h2 class="title">TST Online <small>&copy;</small></h2>
 
-                    <p class="intro"><b>Período:</b> 2018 - 2019</p>
+                    <p class="intro">
+                        <b data-i18n="portfolio_periodo"></b> 
+                        2018 - 2019
+                    </p>
 
-                    <p class="intro"><b>Stacks:</b> HTML, CSS, JS, Bootstrap, jQuery, UX/UI</p>
+                    <p class="intro">
+                        <b data-i18n="portfolio_stacks"></b> 
+                        HTML, CSS, JS, Bootstrap, jQuery, UX/UI
+                    </p>
 
-                    <a href="https://sistema.tstonline.com.br/login" target="_blank">
-                        Demonstração
-                    </a>
+                    <a href="https://sistema.tstonline.com.br/login" target="_blank" data-i18n="portfolio_demo"></a>
 
-                    <a href="#" target="_blank">
-                        Source Code
-                    </a>
+                    <a href="#" target="_blank" data-i18n="portfolio_source_code"></a>
                 </div>
 
                 <div class="col">
@@ -335,17 +329,19 @@
 
                     <h2 class="title">Conduapp Online <small>&copy;</small></h2>
 
-                    <p class="intro"><b>Período:</b> 2019</p>
+                    <p class="intro">
+                        <b data-i18n="portfolio_periodo"></b> 
+                        2019
+                    </p>
 
-                    <p class="intro"><b>Stacks:</b> HTML, CSS, JS, Bootstrap, UX/UI</p>
+                    <p class="intro">
+                        <b data-i18n="portfolio_stacks"></b> 
+                        HTML, CSS, JS, Bootstrap, UX/UI
+                    </p>
 
-                    <a href="dist/img/2019_CONDUAPP_LAYOUT.png" target="_blank">
-                        Demonstração
-                    </a>
+                    <a href="dist/img/2019_CONDUAPP_LAYOUT.png" target="_blank" data-i18n="portfolio_demo"></a>
 
-                    <a href="#" target="_blank">
-                        Source Code
-                    </a>
+                    <a href="#" target="_blank" data-i18n="portfolio_source_code"></a>
                 </div>
 
                 <div class="col">
@@ -353,17 +349,19 @@
 
                     <h2 class="title">AM Turismo Viagens <small>&copy;</small></h2>
 
-                    <p class="intro"><b>Período:</b> 2019</p>
+                    <p class="intro">
+                        <b data-i18n="portfolio_periodo"></b> 
+                        2019
+                    </p>
 
-                    <p class="intro"><b>Stacks:</b> HTML, CSS, JS, Bootstrap, UX/UI</p>
+                    <p class="intro">
+                        <b data-i18n="portfolio_stacks"></b> 
+                        HTML, CSS, JS, Bootstrap, UX/UI
+                    </p>
 
-                    <a href="https://mateusdanieel.github.io/am_turismo_viagens/" target="_blank">
-                        Demonstração
-                    </a>
+                    <a href="https://mateusdanieel.github.io/am_turismo_viagens/" target="_blank" data-i18n="portfolio_demo"></a>
 
-                    <a href="https://github.com/MateusDanieel/am_turismo_viagens" target="_blank">
-                        Source Code
-                    </a>
+                    <a href="https://github.com/MateusDanieel/am_turismo_viagens" target="_blank" data-i18n="portfolio_source_code"></a>
                 </div>
 
                 <div class="col">
@@ -371,17 +369,19 @@
 
                     <h2 class="title">Mazal TI <small>&copy;</small></h2>
 
-                    <p class="intro"><b>Período:</b> 2019</p>
+                    <p class="intro">
+                        <b data-i18n="portfolio_periodo"></b> 
+                        2019
+                    </p>
 
-                    <p class="intro"><b>Stacks:</b> HTML, CSS, JS, Bootstrap, UX/UI</p>
+                    <p class="intro">
+                        <b data-i18n="portfolio_stacks"></b> 
+                        HTML, CSS, JS, Bootstrap, UX/UI
+                    </p>
 
-                    <a href="https://mazalti.com.br/" target="_blank">
-                        Demonstração
-                    </a>
+                    <a href="https://mazalti.com.br/" target="_blank" data-i18n="portfolio_demo"></a>
 
-                    <a href="https://github.com/MateusDanieel/mazal_ti" target="_blank">
-                        Source Code
-                    </a>
+                    <a href="https://github.com/MateusDanieel/mazal_ti" target="_blank" data-i18n="portfolio_source_code"></a>
                 </div>
 
                 <div class="col">
@@ -389,17 +389,19 @@
 
                     <h2 class="title">Classificados</h2>
 
-                    <p class="intro"><b>Período:</b> 2019</p>
+                    <p class="intro">
+                        <b data-i18n="portfolio_periodo"></b> 
+                        2019
+                    </p>
 
-                    <p class="intro"><b>Stacks:</b> HTML, CSS, JS, Bootstrap, UX/UI</p>
+                    <p class="intro">
+                        <b data-i18n="portfolio_stacks"></b> 
+                        HTML, CSS, JS, Bootstrap, UX/UI
+                    </p>
 
-                    <a href="dist/img/2019_SYS_CLASSIFICADOS.png" target="_blank">
-                        Demonstração
-                    </a>
+                    <a href="dist/img/2019_SYS_CLASSIFICADOS.png" target="_blank" data-i18n="portfolio_demo"></a>
 
-                    <a href="#" target="_blank">
-                        Source Code
-                    </a>
+                    <a href="#" target="_blank" data-i18n="portfolio_source_code"></a>
                 </div>
 
                 <div class="col">
@@ -407,17 +409,19 @@
 
                     <h2 class="title">Landing Sistema de Gestão</h2>
 
-                    <p class="intro"><b>Período:</b> 2019</p>
+                    <p class="intro">
+                        <b data-i18n="portfolio_periodo"></b> 
+                        2019
+                    </p>
 
-                    <p class="intro"><b>Stacks:</b> HTML, CSS, JS, Bootstrap, UX/UI</p>
+                    <p class="intro">
+                        <b data-i18n="portfolio_stacks"></b> 
+                        HTML, CSS, JS, Bootstrap, UX/UI
+                    </p>
 
-                    <a href="dist/img/2019_SYS_GESTAO_EMP_LANDING.png" target="_blank">
-                        Demonstração
-                    </a>
+                    <a href="dist/img/2019_SYS_GESTAO_EMP_LANDING.png" target="_blank" data-i18n="portfolio_demo"></a>
 
-                    <a href="#" target="_blank">
-                        Source Code
-                    </a>
+                    <a href="#" target="_blank" data-i18n="portfolio_source_code"></a>
                 </div>
 
                 <div class="col">
@@ -425,17 +429,19 @@
 
                     <h2 class="title">Sistema de Gestão</h2>
 
-                    <p class="intro"><b>Período:</b> 2019</p>
+                    <p class="intro">
+                        <b data-i18n="portfolio_periodo"></b> 
+                        2019
+                    </p>
 
-                    <p class="intro"><b>Stacks:</b> HTML, CSS, JS, Bootstrap, UX/UI</p>
+                    <p class="intro">
+                        <b data-i18n="portfolio_stacks"></b> 
+                        HTML, CSS, JS, Bootstrap, UX/UI
+                    </p>
 
-                    <a href="dist/img/2019_SYS_GESTAO_EMP.png" target="_blank">
-                        Demonstração
-                    </a>
+                    <a href="dist/img/2019_SYS_GESTAO_EMP.png" target="_blank" data-i18n="portfolio_demo"></a>
 
-                    <a href="#" target="_blank">
-                        Source Code
-                    </a>
+                    <a href="#" target="_blank" data-i18n="portfolio_source_code"></a>
                 </div>
 
                 <div class="col">
@@ -443,17 +449,19 @@
 
                     <h2 class="title">Landing Vagas de Emprego</h2>
 
-                    <p class="intro"><b>Período:</b> 2019</p>
+                    <p class="intro">
+                        <b data-i18n="portfolio_periodo"></b> 
+                        2019
+                    </p>
 
-                    <p class="intro"><b>Stacks:</b> HTML, CSS, JS, Bootstrap, UX/UI</p>
+                    <p class="intro">
+                        <b data-i18n="portfolio_stacks"></b> 
+                        HTML, CSS, JS, Bootstrap, UX/UI
+                    </p>
 
-                    <a href="dist/img/2019_SYS_VAGAS_EMP_LANDING.png" target="_blank">
-                        Demonstração
-                    </a>
+                    <a href="dist/img/2019_SYS_VAGAS_EMP_LANDING.png" target="_blank" data-i18n="portfolio_demo"></a>
 
-                    <a href="#" target="_blank">
-                        Source Code
-                    </a>
+                    <a href="#" target="_blank" data-i18n="portfolio_source_code"></a>
                 </div>
 
                 <div class="col">
@@ -461,17 +469,19 @@
 
                     <h2 class="title">Vagas de Emprego</h2>
 
-                    <p class="intro"><b>Período:</b> 2019</p>
+                    <p class="intro">
+                        <b data-i18n="portfolio_periodo"></b> 
+                        2019
+                    </p>
 
-                    <p class="intro"><b>Stacks:</b> HTML, CSS, JS, Bootstrap, UX/UI</p>
+                    <p class="intro">
+                        <b data-i18n="portfolio_stacks"></b> 
+                        HTML, CSS, JS, Bootstrap, UX/UI
+                    </p>
 
-                    <a href="dist/img/2019_SYS_VAGAS_EMP.png" target="_blank">
-                        Demonstração
-                    </a>
+                    <a href="dist/img/2019_SYS_VAGAS_EMP.png" target="_blank" data-i18n="portfolio_demo"></a>
 
-                    <a href="#" target="_blank">
-                        Source Code
-                    </a>
+                    <a href="#" target="_blank" data-i18n="portfolio_source_code"></a>
                 </div>
 
                 <div class="col">
@@ -479,17 +489,19 @@
 
                     <h2 class="title">Template para Landing</h2>
 
-                    <p class="intro"><b>Período:</b> 2019</p>
+                    <p class="intro">
+                        <b data-i18n="portfolio_periodo"></b> 
+                        2019
+                    </p>
 
-                    <p class="intro"><b>Stacks:</b> HTML, CSS, JS, Bootstrap, UX/UI</p>
+                    <p class="intro">
+                        <b data-i18n="portfolio_stacks"></b> 
+                        HTML, CSS, JS, Bootstrap, UX/UI
+                    </p>
 
-                    <a href="https://mateusdanieel.github.io/templates/1" target="_blank">
-                        Demonstração
-                    </a>
+                    <a href="https://mateusdanieel.github.io/templates/1" target="_blank" data-i18n="portfolio_demo"></a>
 
-                    <a href="https://github.com/MateusDanieel/templates/tree/master/1" target="_blank">
-                        Source Code
-                    </a>
+                    <a href="https://github.com/MateusDanieel/templates/tree/master/1" target="_blank" data-i18n="portfolio_source_code"></a>
                 </div>
 
                 <div class="col">
@@ -497,17 +509,19 @@
 
                     <h2 class="title">Template para Landing</h2>
 
-                    <p class="intro"><b>Período:</b> 2019</p>
+                    <p class="intro">
+                        <b data-i18n="portfolio_periodo"></b> 
+                        2019
+                    </p>
 
-                    <p class="intro"><b>Stacks:</b> HTML, CSS, JS, Bootstrap, UX/UI</p>
+                    <p class="intro">
+                        <b data-i18n="portfolio_stacks"></b> 
+                        HTML, CSS, JS, Bootstrap, UX/UI
+                    </p>
 
-                    <a href="https://mateusdanieel.github.io/templates/2" target="_blank">
-                        Demonstração
-                    </a>
+                    <a href="https://mateusdanieel.github.io/templates/2" target="_blank" data-i18n="portfolio_demo"></a>
 
-                    <a href="https://github.com/MateusDanieel/templates/tree/master/2" target="_blank">
-                        Source Code
-                    </a>
+                    <a href="https://github.com/MateusDanieel/templates/tree/master/2" target="_blank" data-i18n="portfolio_source_code"></a>
                 </div>
 
                 <div class="col">
@@ -515,17 +529,19 @@
 
                     <h2 class="title">Template para Landing</h2>
 
-                    <p class="intro"><b>Período:</b> 2019</p>
+                    <p class="intro">
+                        <b data-i18n="portfolio_periodo"></b> 
+                        2019
+                    </p>
 
-                    <p class="intro"><b>Stacks:</b> HTML, CSS, JS, Bootstrap, UX/UI</p>
+                    <p class="intro">
+                        <b data-i18n="portfolio_stacks"></b> 
+                        HTML, CSS, JS, Bootstrap, UX/UI
+                    </p>
 
-                    <a href="https://mateusdanieel.github.io/templates/3" target="_blank">
-                        Demonstração
-                    </a>
+                    <a href="https://mateusdanieel.github.io/templates/3" target="_blank" data-i18n="portfolio_demo"></a>
 
-                    <a href="https://github.com/MateusDanieel/templates/tree/master/3" target="_blank">
-                        Source Code
-                    </a>
+                    <a href="https://github.com/MateusDanieel/templates/tree/master/3" target="_blank" data-i18n="portfolio_source_code"></a>
                 </div>
 
                 <div class="col">
@@ -533,17 +549,13 @@
 
                     <h2 class="title">Template para Landing</h2>
 
-                    <p class="intro"><b>Período:</b> 2019</p>
+                    <p class="intro"><b data-i18n="portfolio_periodo"></b> 2019</p>
 
-                    <p class="intro"><b>Stacks:</b> HTML, CSS, JS, Bootstrap, UX/UI</p>
+                    <p class="intro"><b data-i18n="portfolio_stacks"></b> HTML, CSS, JS, Bootstrap, UX/UI</p>
 
-                    <a href="https://mateusdanieel.github.io/templates/4" target="_blank">
-                        Demonstração
-                    </a>
+                    <a href="https://mateusdanieel.github.io/templates/4" target="_blank" data-i18n="portfolio_demo"></a>
 
-                    <a href="https://github.com/MateusDanieel/templates/tree/master/4" target="_blank">
-                        Source Code
-                    </a>
+                    <a href="https://github.com/MateusDanieel/templates/tree/master/4" target="_blank" data-i18n="portfolio_source_code"></a>
                 </div>
 
                 <div class="col">
@@ -551,16 +563,16 @@
 
                     <h2 class="title">Sistema para Pizzaria</h2>
 
-                    <p class="intro"><b>Período:</b> 2019</p>
+                    <p class="intro"><b data-i18n="portfolio_periodo"></b> 2019</p>
 
-                    <p class="intro"><b>Stacks:</b> HTML, CSS, JS, Bootstrap, UX/UI</p>
+                    <p class="intro"><b data-i18n="portfolio_stacks"></b> HTML, CSS, JS, Bootstrap, UX/UI</p>
 
-                    <a href="dist/img/2019_PIZZARIA_LAYOUT.png" target="_blank">
-                        Demonstração
+                    <a href="dist/img/2019_PIZZARIA_LAYOUT.png" target="_blank" data-i18n="portfolio_demo">
+                        
                     </a>
 
-                    <a href="#" target="_blank">
-                        Source Code
+                    <a href="#" target="_blank" data-i18n="portfolio_source_code">
+                        
                     </a>
                 </div>
 
@@ -569,16 +581,16 @@
 
                     <h2 class="title">Portfólio (Antigo)</h2>
 
-                    <p class="intro"><b>Período:</b> 2019 - 2021</p>
+                    <p class="intro"><b data-i18n="portfolio_periodo"></b> 2019 - 2021</p>
 
-                    <p class="intro"><b>Stacks:</b> HTML, CSS, JS, Bootstrap, UX/UI</p>
+                    <p class="intro"><b data-i18n="portfolio_stacks"></b> HTML, CSS, JS, Bootstrap, UX/UI</p>
 
-                    <a href="https://mateusdanieel.github.io/portfolio-antigo/" target="_blank">
-                        Demonstração
+                    <a href="https://mateusdanieel.github.io/portfolio-antigo/" target="_blank" data-i18n="portfolio_demo">
+                        
                     </a>
 
-                    <a href="https://github.com/MateusDanieel/portfolio-antigo" target="_blank">
-                        Source Code
+                    <a href="https://github.com/MateusDanieel/portfolio-antigo" target="_blank" data-i18n="portfolio_source_code">
+                        
                     </a>
                 </div>
 
@@ -587,16 +599,16 @@
 
                     <h2 class="title">Triagem Covid-19</h2>
 
-                    <p class="intro"><b>Período:</b> 2020</p>
+                    <p class="intro"><b data-i18n="portfolio_periodo"></b> 2020</p>
 
-                    <p class="intro"><b>Stacks:</b> HTML, CSS, JS, Bootstrap, Sass (SCSS), UX/UI</p>
+                    <p class="intro"><b data-i18n="portfolio_stacks"></b> HTML, CSS, JS, Bootstrap, Sass (SCSS), UX/UI</p>
 
-                    <a href="https://mateusdanieel.github.io/COVID-19" target="_blank">
-                        Demonstração
+                    <a href="https://mateusdanieel.github.io/COVID-19" target="_blank" data-i18n="portfolio_demo">
+                        
                     </a>
 
-                    <a href="https://github.com/MateusDanieel/COVID-19" target="_blank">
-                        Source Code
+                    <a href="https://github.com/MateusDanieel/COVID-19" target="_blank" data-i18n="portfolio_source_code">
+                        
                     </a>
                 </div>
 
@@ -605,16 +617,16 @@
 
                     <h2 class="title">Portfólio (Novo)</h2>
 
-                    <p class="intro"><b>Período:</b> 2021 - ATUAL</p>
+                    <p class="intro"><b data-i18n="portfolio_periodo"></b> 2021 - ATUAL</p>
 
-                    <p class="intro"><b>Stacks:</b> HTML, CSS, JS, Sass (SCSS), UX/UI</p>
+                    <p class="intro"><b data-i18n="portfolio_stacks"></b> HTML, CSS, JS, Sass (SCSS), UX/UI</p>
 
-                    <a href="https://mateusdanieel.github.io/" target="_blank">
-                        Demonstração
+                    <a href="https://mateusdanieel.github.io/" target="_blank" data-i18n="portfolio_demo">
+                        
                     </a>
 
-                    <a href="https://github.com/MateusDanieel/MateusDanieel.github.io" target="_blank">
-                        Source Code
+                    <a href="https://github.com/MateusDanieel/MateusDanieel.github.io" target="_blank" data-i18n="portfolio_source_code">
+                        
                     </a>
                 </div>
        
@@ -626,86 +638,83 @@
     <section class="sec-timeline" id="timeline">
         
         <div class="container">
-            <h1 class="sec-title">
-                Timeline - Como me tornei um desenvolvedor?
-            </h1>
+            <h1 class="sec-title" data-i18n="timeline_title"></h1>
 
             <ul class="wrapper">
                 <li class="item">
                     <h2 class="year">2003</h2>
-                    <p class="intro">Em 2003 eu tive o meu primeiro contato com um computador, isso aconteceu na casa da minha avó. Eu me lembro bem de ter que esperar junto com os meus tios até meia-noite ou finais de semana para usar a internet, anos depois fui descobrir que isso era por conta da internet discada.</p>
+                    <p class="intro" data-i18n="timeline_p_one"></p>
                 </li>
 
                 <li class="item">
                     <h2 class="year">2004</h2>
-                    <p class="intro">Meu pai e meu irmão se juntaram para comprar o nosso primeiro PC, e até hoje ainda lembro das configurações: um AMD Athlon equivalente ao Pentium III, com 256 MB de memória RAM, essa máquina durou até meados de 2010 ainda.</p>
+                    <p class="intro" data-i18n="timeline_p_two"></p>
                 </li>
 
                 <li class="item">
                     <h2 class="year">2005</h2>
-                    <p class="intro">Empolgado pela aquisição do nosso computador, eu fiz um curso básico de informática em um Telecentro da região. Lá eu tive aulas de digitação e aprendi a utilizar algumas ferramentas básicas, também tive meu primeiro contato com um sistema operacional baseado em Linux.</p>
+                    <p class="intro" data-i18n="timeline_p_three"></p>
                 </li>
 
                 <li class="item">
                     <h2 class="year">2007</h2>
-                    <p class="intro">Apesar de ter um computador desde 2004, só fui ter acesso a internet em casa no ano de 2007 (que coisa, não?).</p>
+                    <p class="intro" data-i18n="timeline_p_four"></p>
                 </li>
 
                 <li class="item">
                     <h2 class="year">2008</h2>
-                    <p class="intro">Junto com meu irmão montamos um computador por conta própria, adquirindo peça por peça e básicamente usando apenas "sucata". Essa máquina ficou para mim usar e nunca vou esquecer ela: um poderosíssimo processador Intel Pentium II, incríveis 128 MB de memória RAM e um HD com maravilhosos 12 GB de memória.</p>
+                    <p class="intro" data-i18n="timeline_p_five"></p>
                 </li>
 
                 <li class="item">
                     <h2 class="year">2008 - 2010</h2>
-                    <p class="intro">Em 2008, por influência de um colega da escola, comecei a me interessar por criar blogs. Eu procurava falar sobre coisas que eu gostava, sem me importar muito com a quantidade de visualizações. E foi aí que eu tive meu primeiro contato com o HTML e o CSS, porém não tinha a mínima noção do que estava acontecendo, eu só apagava umas coisas aqui, mudava outras de lugar ali até que uma hora funcionava.</p>
+                    <p class="intro" data-i18n="timeline_p_six"></p>
 
-                    <p class="intro">Em 2009, comecei a fazer alguns trabalhos de montagem e manutenção de computadores.</p>
+                    <p class="intro" data-i18n="timeline_p_seven"></p>
                 </li>
 
                 <li class="item">
                     <h2 class="year">2010 - 2013</h2>
-                    <p class="intro">Em 2010 eu já tinha plena certeza que queria trabalhar com TI, só não sabia em qual segmento. Nesse mesmo ano meu irmão começou a cursar Análise e Desenvolvimento de Sistemas e tenho que admitir que ele teve certa influência na minha escolha (parcialmente, mas teve). Eu ainda continuava com os meus blogs, porém com um foco totalmente diferente, agora voltado em divulgar meus trabalhos com mods/patches para games, e foi ai que eu aprendi básicamente tudo o que eu sei sobre Photoshop até hoje. Esse blog teve uma boa visibilidade, o que me fez entrar para uma equipe de edição na época e receber convites de outras, mas sempre foi por hobby, nunca fomos remunerados por isso. Não tive coragem de apagar esse blog, mesmo depois de ter parado de atualizar ele em 2013, me trás ótimas lembranças e ele pode ser visto clicando <a href="http://kitsbymateus.blogspot.com.br/" target="_blank">aqui</a> (ignorem a vergonha alheia em algumas publicações).</p>
+                    <p class="intro" data-i18n="timeline_p_eight"></p>
                 </li>
 
                 <li class="item">
                     <h2 class="year">2013</h2>
-                    <p class="intro">Com um pouco mais de conhecimento e sem precisar do auxílio do meu irmão dessa vez, eu montei um PC "Gamer" pra mim. Com um processador/APU AMD A8 3870K que vinha com uma GPU Radeon HD6550D integrada, 8 GB de RAM DDR3 e HD de 500 GB. Ainda tenho e uso esse PC até os dias atuais, porém ele passou por dois pequenos upgrades em 2016 e em 2018. Conseguir montar meu próprio PC foi uma grande conquista pessoal.</p>
+                    <p class="intro" data-i18n="timeline_p_nine"></p>
                 </li>
 
                 <li class="item">
                     <h2 class="year">2015</h2>
-                    <p class="intro">À essa altura da minha vida, no último ano do ensino médio e trabalhando como estagiário em uma loja de roupas infantis, eu já estava decidido que queria trabalhar com TI há alguns anos. E meu primeiro passo foi estipular como meta passar no vestibular da ETEC para o curso Técnico em Informática. Infelizmente nem tudo são flores, prestei o vestibular no final do ano e por pouco não consegui uma das 40 vagas disponíveis.</p>
+                    <p class="intro" data-i18n="timeline_p_ten"></p>
                 </li>
 
                 <li class="item">
                     <h2 class="year">2016</h2>
-                    <p class="intro">Estudei a primeira metade do ano para prestar o vestibular para o curso Técnico em Informática da ETEC para o 2º semestre, e dessa vez eu consegui passar com certa facilidade. Foi uma enorme vitória pessoal.</p>
+                    <p class="intro" data-i18n="timeline_p_eleven"></p>
                 </li>
 
                 <li class="item">
                     <h2 class="year">2016 - 2017</h2>
-                    <p class="intro">Após 1 ano e meio de curso, me formei como Técnico em Informática pela ETEC. O curso abrange muitas áreas, e a matéria que despertou meu interesse logo de cara foi Técnicas de Programação para Internet, que nada mais era que uma sequência de aulas sobre Desenvolvimento Web. Nessa matéria finalmente aprendi HTML e CSS de fato, e também um pouco de PHP, JavaScript e jQuery. O meu grupo ficou encarregado de desenvolver um e-commerce para a loja de roupas que eu trabalhava na época como TCC, com stack voltado para HTML, CSS, JS, jQuery e PHP. Eu e mais um dos membros do grupo ficamos responsáveis pelo front-end e pelo web design do sistema, enquanto os outros dois desenvolveram a parte back-end, mas a gente sempre dava pitacos no back e vice-versa. Conseguimos entregar o projeto de maneira satisfatória e apresentar para os professores com sucesso. A partir desse momento eu tive a plena certeza de que tinha me encontrado profissionalmente: "quero me tornar um desenvolvedor front-end!".</p>
+                    <p class="intro" data-i18n="timeline_p_twelve"></p>
                 </li>
 
                 <li class="item">
                     <h2 class="year">2018</h2>
-                    <p class="intro">Ainda sem poder arriscar a estabilidade do meu emprego como balconista, optei por utilizar meu tempo livre para dedicar a minha carreira de desenvolvedor, me desdobrando para buscar demandas e estudar ao mesmo tempo, mas tudo deu certo. Em Abril de 2018 apareceu minha primeira oportunidade de trabalhar em um grande projeto, e foi aí que eu participei do desenvolvimento do sistema TST ONLINE, junto com 2 dos meus 3 parceiros de TCC. Atuei como o único front-end do projeto, mas recebi ajudas e dicas dos outros desenvolvedores em relação ao design, afinal eu ainda era bem inexperiente. Nesse projeto eu era responsável pela criação do conceito e desenvolvimento de todas as telas do sistema (páginas, formulários, relatórios, entre outras coisas).</p>
+                    <p class="intro" data-i18n="timeline_p_thirteen"></p>
 
-                    <p class="intro">Foi ficando difícil conciliar meu emprego com o projeto, o que fez com que eu pedisse demissão no final do ano para me dedicar totalmente como desenvolvedor.</p>
+                    <p class="intro" data-i18n="timeline_p_fourteen"></p>
                 </li>
 
                 <li class="item">
                     <h2 class="year">2019</h2>
-                    <p class="intro">Com a participação no desenvolvimento de um grande sistema no meu portfólio, isso abriu a possibilidade de trabalhar em mais alguns projetos. Foi também um período de muito estudo, networking com outros desenvolvedores e participação em alguns eventos. Finalizei o ano em busca de uma oportunidade para atuar como desenvolvedor no mercado, para adquirir mais experiência, aplicar meus conhecimentos e me consolidar de vez como um desenvolvedor de fato.</p>
+                    <p class="intro" data-i18n="timeline_p_fifteen"></p>
                 </li>
 
                 <li class="item">
                     <h2 class="year">2020</h2>
-                    <p class="intro">Após alguns dias de muitas entrevistas e ligações, enfim eu consegui uma oportunidade para atuar no mercado. Fui contratado como desenvolvedor front-end pela Tritone Interactive, e até o momento tem sido uma experiência de muito aprendizado. Logo de cara eu já tinha gostado do ambiente, e também fui extremamente bem recebido pelos colaboradores da empresa. Em poucas semanas, conheci novas tecnologias que me ajudaram a melhorar e otimizar (e muito!) o meu trabalho.</p>
+                    <p class="intro" data-i18n="timeline_p_sixteen"></p>
 
-                    <p class="intro">Em meados de Julho ingressei no curso de especialização em desenvolvimento de aplicativos para smartphone da ETEC, o qual concluí em Dezembro de 2020 mesmo. Lá aprendi um pouco de Flutter e desenvolvi alguns apps nesse período.
-                        Sempre gostei e tinha curiosidade de aprender um pouco de mobile, graças a ETEC eu pude ter uma boa introdução para esse mundo.</p>
+                    <p class="intro" data-i18n="timeline_p_seventeen"></p>
                 </li>
             </ul>
         </div>
@@ -824,22 +833,19 @@
             
             <form id="my-form" class="dir" action="https://formspree.io/f/mnqlzovq" method="POST">
 
-                <h1 class="sec-title">
-                    Contato
-                </h1>
+                <h1 class="sec-title" data-i18n="contato_title"></h1>
 
-                <p class="intro">
-                    Para me enviar uma mensagem preencha o formulário abaixo. <br />
-                    Irei retornar assim que possível! :D
-                </p>
+                <p class="intro" data-i18n="contato_intro"></p>
 
                 <input type="email" name="email" placeholder="Seu e-mail" required />
 
                 <textarea name="message" placeholder="Escreva sua mensagem ..." required></textarea>
 
-                <button id="my-form-button" onclick="enviarEmail()">Enviar</button>
+                <button id="my-form-button" onclick="enviarEmail()" data-i18n="contato_bt_enviar"></button>
 
-                <p id="my-form-status"></p>
+                <p class="my-form-status sucess" data-i18n="contato_msg_sucess"></p>
+
+                <p class="my-form-status error" data-i18n="contato_msg_error"></p>
               </form>
 
         </div>
@@ -852,18 +858,370 @@
 
     <footer class="footer">
         <div class="container">
-            <p class="intro">COPYRIGHT © <span id="js-year"></span> - MATEUS DANIEL</p>
+            <div class="lang">
+                <button type="button" data-locale="en" class="lang__bt" title="EN-US">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="512px" height="346px" viewBox="0 0 512 346" enable-background="new 0 0 512 346" xml:space="preserve">  <image id="image0" width="512" height="346" x="0" y="0"
+                        href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAgAAAAFaCAQAAADCjC19AAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+                    AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAJcEhZ
+                    cwAADsQAAA7EAZUrDhsAAAAHdElNRQfmBh4FChDS3L02AAAYsElEQVR42u3daYAUxd3H8e8MIAuC
+                    BAW5BVERj5ggHgkocngR74MoecLjgXfUeDyJGo1XJJrj8YhJ1CdiPBIVRBE0aowC3kcQ1KggBDmM
+                    4q4st1y7O/W8YJFjZ6qqt3um2a3fp9/AVPV/awb6t9Mz1V0ZQwHNGcxA+tCL7WnN1qyKhUxhNC/X
+                    a+/WnMcJ9KZt2k9DJGErWMwspjOZyazN3yWTNwB24TKGN7hDYiwjWRlxnyN4kB3THrhIkS3hYW7l
+                    k7oNdQOgHbdwOk3SHnG9vMkg1kTofxyPN9BnKhJVNX/mKio3f3DLADiG+2iX9khjuJOLvft2ZQat
+                    0h6wSAl9yRn8bdMHsps1X8+EBn34w3n08O57tQ5/CUx7nuLnmz6waQDcwXVk0h5hTM0Y5tmzqXdP
+                    kcYjw43ctvGvGwPgughvnrdmfT379WCHtIcqkopLuGbDHzcEwNFcl/aoEuJ7CqPDX8J1A0PX/2F9
+                    ALTjzw3+zf8Gizz7VXr2E2l8stzP9uv/AHBzA//ob1P/9Ow31zsqRBqfHRkF678G3IWZNE17PAlZ
+                    x24s8Oz7By5Ie7giqalid+ZmgUsbzeEPf/Q+/GEUy9MerkhqmnEJZExzPl9/NtAIvMaQQnOe8zqK
+                    JxtR+IlEs4guWQY2msP/IQ6PdPjD3ziChWkPWyQl7RjQlEFpjyK2NXzGZEbzZj32ncRunMWJ7E6H
+                    tJ+GSMkNypjnOMLaZQrXMI3VaY80WN2ZZ2mdH2Hqs4SlBfsyikOsfZ5tSi9rh5cYQi7tZyIika3m
+                    NQYzmQGWPr2yjhlxV+vwF2mwclxtbW+XdVwRNz3tZyAiMUyztrbKbnFB8JZWpT1+EYnBfgQ3yXqW
+                    EZFGSAEgEjAFgEjAFAAiAVMAiARMASASMAWASMAUACIBUwCIBEwBIBIwBYBIwBQAIgFTAIgETAEg
+                    ErCk7ol7ECP4Lh1oBhjKeZ8xPImJXKcvp3MwHdkGgAo+ZBxjqYlcZ2/OYCCdaQ7AImYynr+yLnKd
+                    XRnJELpSBsASZjGBB+pxg7RunMVh7ERLAJbxb57mPlbU+/UWSYaxw2NrY57Iu+/bpqfX/hu2luZ+
+                    k8tT5wOzd6Q625g7TU2eOv82B0aq08T80qzLU+dTMzhSnYy50qzOU6fCHOexd3frv8+8SCPRFuJm
+                    lTH239LuFQO341W+WaDtS/oz2zOJyniB/gXaVjDQcWeTjZoyccPCh3WsYShTPOtk+CvDC7RVczIT
+                    POvA7/lRgZYcZ/KAY2/7TUEXcoz3OCRMU22N8QNgDN+3tH5IH6q8hvlHzre0LmBPvvKq84uNSx/n
+                    sYg9PNcEvGTTVdTrWMnezPeq80MesrSuZX/+Zd3fHgAiscT9EPAA6+EPe3G6V51enGNt34mLvep0
+                    5HJrezuu9KrTmmut7a243qtOM35pbW/OTV51RIoibgD8VwI9AIbTJJE6J9PC0eOHXs/5aNo6f1KZ
+                    R52BdHP0OKoRrcwsDU78dwAuB3qcRvjU2YvWidTpwE6J1GnFXonUacK+HnVEiiJuALR39ijzOnB9
+                    fgu6f1bjrSNSFHEDYImzRxUrE6kDlQHXESmKuAHgXjjkXa+1hdx15rIskTqLWeBR511njzXMSKRO
+                    jvc86ogURdwAGJNAD4CxuGYN+tV5nOrYPQAmOpdEecbrnc0/nL/fX9EC5ZKeuAHwIpOs7Z9yl1ed
+                    6Yyzti/mt1515nKvtX2V59dui6yzAKCK67zqrHb8vJx11oJIkcW/GGgEnxVsW80w78XFzmVWwbZq
+                    hnufKV9umTOY4wyvEwCAG6xzBi/mA886v+NJS+u1vOpZR6QI4gfA5/QrMNlwAQN5y7vOEg4ucMhV
+                    cCTPe9dZxWCeztuylJMY612niqN4OG/LV5zG3d51cpzC3XlPcNZwMaO864gUQfypwABZfsAI+n29
+                    0vAa3uNR7ol81VyGEziDg2lT+/d1fMA4/sDyyM9rKGcx6OvJPFV8zBP8rh6ftx/CeQz5+ou6aubw
+                    JLfzReQ6B/AjDqNT7d9qmMvT3O41mVhTgaWIkgmADVrRDMh5fV5vs23t5cA+X6LZtKidrbfU+RGj
+                    XVnt/MJlXt9oFNa89nLg5REucFYASBElGwCSPAWAFFFSNwSRdKxzXEso0tfWqABo2BayX9pDkK2c
+                    9T2+7gkoEjAFgEjAFAAiAVMAiARMASASMAWASMAUACIBUwCIBEwBIBIwBYBIwEo5FXg7jqE/XWgJ
+                    rKOCdxnvfXuOTW3L9xhAV1oBVVTwIeP5dz3qNGcoA+lKG6CGcj7mST6qR51mHMphdKUtkKOcOUz0
+                    uDehyNYggcVB/baLTGWd6lXmLrNtxDqnmy/q1KkxD5q2EeucZObXqZMz40zHiHWOMLPyvG7Pmh4J
+                    vW5aHFRbvM1xgJciADJmdMGf8K7ZPkKl3xSsM8t0iVDnqrzrEBtjzKdmtwh1zjXVBepUmD6JvHYK
+                    AG3xtq0gAK6y/oznTcazztnWOm+bpp51Tip4+BtjzAzT0rPO4IKHvzHGLIgUbYU2BYC2eJtVKT4E
+                    7Oy48+1hnOhVpw03W9v350yvOs251Xqjk96eC5FmucO6omE3fhb5tRIpqVIEwIjaG2EVdrZXnZPZ
+                    IZE6Q52rA57rVac/ezt6jKSZVyWRlJQiAAZ69PAZh7tO369vJxqvTg92TqTON/i2Rx2R1JTmFMCl
+                    udcimu46GY8+PnWgSwnriKSmFAHgc3Nwn+VDfOp81QDriKSmFAHwsbPHZ17r7LnrrPBaZ89dp5pP
+                    POrMSqiPSGpKMRNwAv/t7OFX5zJHj2eo8qgz0bkezxSvlQ2e4vfWbwFgutfSH3G04Yoi/wRp1Eqx
+                    LkCWaXzL0r6OPbx+48IkBllac+znOQV3PMdb24c4ljzd4F5GWttP4omoL1YdWhdAiqgUpwA5Tree
+                    C1/iefjDSBZZWq/znoF/Af+xtN7mefjDT5htaf1LAoe/SFGV5mrAdzmqwKFbw2WeC4gDzOXIAoeu
+                    4cYIC20u5PCClw/dwU+86yzhMN4v0PYgZ8V6zURKoFSXA7/EXtzJ4s0eW8sE9uO2SHXeYR9+RcVm
+                    j1XzHP25jijr/82gD9dvsbB5DVMYwiUR1u2D+RzIT5m72WOGNzmW01hbtFdTJCGlXRuwKb3pUFtz
+                    GTO8PvvPJ0tvOtaG1wpm1nsx0gy96Fz7Qd4qZm4RUFHsStfaD1RXM3uLgIpHnwFIEWlx0K2dAkCK
+                    SHcEEgmYAkAkYAoAkYApAEQCpgAQCZgCQCRgCgCRgCkARAJWyoVBJHnLI1xJIWGyXjCumYBbO/tM
+                    wPn0SHuAspWzHuE6BRAJmAJAJGDJfQawK/3YsfbKugreZ1qky3M36s5BdKwdVyUf8Da5etXpzAA6
+                    196XfwkzeD3SZb4btWcQnWkOwHI+5hWv247V1ZZBdKMMgJXM4hXW1KuOSJISWRrsIPN6nT1nm1Mi
+                    L2K0r3kxzwJbI72XDtuw7WmerrP41xfmItMkYp2eZmydxb8qzZVmm4h1upj7TdUWdZabG72WINPS
+                    YNribY4DPH4AXFRwhby7TTbCQEeYNQXqPBrpkDvOrCxQ55lIaxEPMosL1Hk50lrE++dZz3i9aaaT
+                    c28FgLZ4W5ED4BTrQpujvId5uHWhzXu863zHrLbUGeddZy+zzFLnBe93E91NhaXO26bMub8CQFuc
+                    ragB0NqUW/evMd/2GuQ2Zo5jJIO86mTNdEed4z1ftkmOOiM96zzuqPNTx/4KAG3xNqu43wKcxo7W
+                    9iwXetU5iZ6OHj/2qnOoczW+y73q9LXegNy/Tg9OcPS4VN/ESHri/ucbmkAPv16HeX1j4a7zXa8F
+                    RN119vCagnOkcypVR/r4vEAixRA3ANyr6Haq/eorbp2WdEikThO6J1KntH1EikJvP0UCFjcA3Gvf
+                    lXtNeHHXWUN5InVyfJpIndL2ESmKuAHwXAI9/Hq9QHUidd5iiUedvzt7zPJa0Mxdp4JpHnVEiiJu
+                    ADxApbU9x51edcaxwNHjdq86z/Oho8etXnXe4rVE6sxhoqPHHfWcoiySgLgBsNSxZPftnr/f1nCh
+                    dc7/g7zoVaeG861z9Z/mcc9ndqF1QdNXGO1Z5zLrekPveQabSHHEnAiEwVxhagrs/WCk2ffn1Jkv
+                    v8EE53y5TbdTCs4FnGS2i1BnqFleoM7bpn2EOgeZRQXqfGB2cu6tiUDa4m2OAzx+AGAONe/W2XOB
+                    OT3yUPuZN+rUKTcXRrqiAIP5dp6LihabK0yziHV2z3NR0QpzY6Q4wmB6mDF1QnK1+a1p7bGvAkBb
+                    vM0quTsCfYt+dKQ5UEM50+t9+W1vBtCZMiBHOR/wcj0vv+3JILrSAjCUM5PJ9VyttxuD6U5LACqY
+                    zYusqledjhxKD1oBUMkc/sEKr/10RyCJx3qE65ZgWzsFgMSjW4KJSH66K3DD1p6xaQ9BGjKdAmzt
+                    7KcAIrHoFEAkYAoAkYApAEQCpgAQCZgCQCRgCgCRgCkARAKmABAJmAJAJGClnQqcYWc60QKoppy5
+                    MZbH7EFnWgI1VDC3ntfnAXSlG9sCOSqY73l9Xj6d6MZ2AJSzgGVFev1EEla6AGjLTxlBl00eWclE
+                    fsHMiHVacRlnbHYN3Gqe5Re8G7FOGRdyDrtt8shaXuAm3oxYpxlncwF7bfJINVO4xfMORiKpKtW1
+                    AAcynk55Hq/iIu6JUGdvJua9j36Oq/h1hDq7MJE98zxuuIVrIixI3pnxHJC35S5+XM87GWxO1wJI
+                    EZUmAPbgDct6POfwJ8863XnbshTZ//C/nnXa8ZZlKbKb+Zlnnda8zt4FW+/njHq+Xps/53kJVBHJ
+                    qxQBkOUd64p9q9nd61798CKDLa017MNHXnXGMszSajiI173q3MV51vZjeSr6y7UFewB8yY9i/wRp
+                    3KwXjJciAI5lgqPH77yW/uznvFX3X/mhR53efOR4Xs95rWjYifk0s/aYyv4RX6u6dEcgiSf1OwK5
+                    1sf16eHX62ivDzWPd8bakNpP9F0/rZmjR1+6eT0zkZSUIgD2cPboVnuzzLh12tA5kTrN2CWROhl6
+                    e9QRSU0pAqCFR59tE6rjEySlHI9PHZHUlCIAFjp7rOPLROrA5x59vtjK6oikphQB8JJHD59v3t11
+                    prHUo84UZ4/5zE2kzrLI05NESqoUAfAX55Tf+7zqjHMe3n51nuUzZx3jUedV5yzGB1jn9xKJpKMU
+                    AfApv7K2v8wYrzpL+Lm1/T3+z6vOan5ibZ/jufJvDZda37l8wU0RXymREivN1YA38mjBthkM8/p9
+                    C/B77irYNp/jvafePmI5NMs5jpWedZ7jfwqOfSkneH2yIZKmRBYHdW8Zc0WetXZrzAOmTcRKF5jK
+                    OnVyZlyk9XoxmBHmizzP91nTLWKd48z8PHVeNr0SeuW0OKi2eFuJFgd1a8eJ9Kdj7buOxbzH43xc
+                    jzrf4HgOoRNNAFjKB4zn/XrUacWxDKZz7XSeFXzEk0ytR50yjuYwurINAF8xk6d5NbFXTTMBJR4t
+                    DtqgKQAkntSnAovIVkoBIBIwBYBIwBQAIgFTAIgETAEgEjAFgEjAFAAiAVMAiASstCsDSdK6MCft
+                    IUhDpgBo2Jpa1jcQcdIpgEjAFAAiAUsmADKcyHgWkqu9BLmSFzm39vLYaI5kDJ9RXVtnCa/wY1rW
+                    o84hPMSnVNXWWc4bXOF1r/8tHcBo5rGuts5KpnItO9Sjzj7cxRzW1tb5ivcYlXetRJHSSuCGIJ3M
+                    K3n3nW2+FenGBW3NM3nr/Mf0j1SnlRmTt06FOSJSnebmXpPLU2epGRapTlNzq6nJU2elGemxt/2G
+                    ICKxxL8fwI68mXe9XoCVDGC6ZxJtx2sFF9pcyxEe9wRer4xJfLdAWw0nOZcp26ApT3FkodTkTO73
+                    rJPhYU4t2HoZtzn21+KgUkTxTwEeKHj4Qysep8yzzh8t6+w25zG+4VnnVwUPf2jCQ3TxrPOzgoc/
+                    ZLjbe82f8y2HP/yGAz3riBRB3AA4xHKYAOzMuV51vskPrO3tudyrzk6cb21vzdVedbZ33Dm4OTd4
+                    1Snjemt7E905WNIUNwBOTaAHwCnOkw2/Oic7F+wcVnsvQbtjnIuMHeO17NcQ2jt6DKaD1zMTKYK4
+                    AbCfs0dfr5/hrrMrbTzq9HX2aEf3ROq0YM9E6mTp41FHpCjiBkBbZ49mXgt2uuvg9fVbY60jUhRx
+                    A6DS2WMtKxKpg9cyG421jkhRxA2Atz16+Kz7464zwytI/unsUc6CROqsYkYidWqY5lFHpCjiBsAj
+                    CfQAGONcH9ivzuOsdfR41Gsl4qdZ5ujxBKs86kx2Lmr+PIu8nplIEcSfCDSe4y2ts/im5wq5oznT
+                    0vo5vb3eAcCvrV/gLaU35V51ruAWS+sq9vG8EHck91paqzjQMVXKPhHoMwZ4jULCZf9/6pgp6J6q
+                    ur2ZWXDvJWYv7wmz25qpBet8Zb7jXaeZmVSwztoIk4Gz5omCdarNKRGmAo8uWCdnzos5FXhepEnJ
+                    2kLcHAd43ADA7GCezbvv+6Z3pIG2NmPz1plt9o1Up8yMzjuH/1MzIFKdpuY2U52nTrn5XqQ6WXOD
+                    WZenzmJzqsfeCgBt8TarpNYGPJwR9KMzZUAV5UxjLI9SE/ntykGcwcF0pQVQTTn/YhwPeZ5EbGo/
+                    RjKQbmwL5CjnI8ZzH6sj19mbsxnCTrQGDOXMYgJ/8jwZ2dSunMvh7FQ7obmcT3iKe1jssafWBpR4
+                    tDhog6YAkHi0OKiI5KcAEAmYAkAkYAoAkYApAEQCpgAQCZgCQCRgCgCRgCkARAKmABAJmAJAJGAK
+                    AJGAKQBEAqYAEAmYAkAkYAoAkYA1dbT3THuAwbMvZtpU/0ISh+uOQCLSiOkUQCRgCgCRgCkARAKm
+                    ABAJmAJAJGAKAJGAKQBEAqYAEAmYAkAkYAoAkYApAEQCpgAQCZgCQCRgrsuBP0l7gCISi/WCcdfl
+                    wJm0Ry8isViPcJ0CiARMASASMAWASMAUACIBUwCIBEwBIBIwBYBIwBQAIgFTAIgETAEgEjAFgEjA
+                    FAAiAVMAiARMASASMAWASMAUACIBUwCIBEwBIBIwBYBIwBQAIgFz3RV4WNoDFJHicd0VWEQaMZ0C
+                    iARMASASMAWASMAUACIBUwCIBEwBIBIwBYBIwBQAIgFTAIgETAEgEjAFgEjAFAAiAVMAiATMdTnw
+                    Y2kPUERisV7S77ocOJP26EUkFusRrlMAkYApAEQCpgAQCZgCQCRgCgCRgCkARAKmABAJmAJAJGAK
+                    AJGAKQBEAqYAEAmYAkAkYAoAkYApAEQCpgAQCZgCQCRgCgCRgCkARAKmABAJmAJAJGCuuwLfkvYA
+                    RaR4XHcFFpFGTKcAIgFTAIgETAEgEjAFgEjAFAAiAVMAiARMASASMAWASMAUACIBUwCIBEwBIBIw
+                    BYBIwBQAIgFzXQ58ZdoDFJFYrJf0uy4HzqQ9ehGJxXqE6xRAJGAKAJGAKQBEAqYAEAmYAkAkYAoA
+                    kYApAEQCpgAQCZgCQCRgCgCRgCkARAKmABAJmAJAJGAKAJGAKQBEAqYAEAmYAkAkYAoAkYApAEQC
+                    pgAQCZjrrsBT0x6giBSP667AItKI6RRAJGAKAJGAKQBEAqYAEAmYAkAkYAoAkYApAEQCpgAQCZgC
+                    QCRgCgCRgCkARAKmABAJmAJAJGCuy4H3S3uAIhKL9ZJ+1+XAmbRHLyKxWI9wnQKIBEwBIBIwBYBI
+                    wBQAIgFTAIgETAEgEjAFgEjAFAAiAVMAiARMASASMAWASMAUACIBUwCIBEwBIBIwBYBIwBQAIgHL
+                    krO2t0x7gCISg/0Irsmy0tqhT9rjF5EY9rW2rsyyyNphlE4SRBqsLKOs7YuyzLZ2OIQX6U+LtJ+H
+                    iETUgv5MYoC1z6ymTOcIa5eBvJr2M5F6qqacqTzCY45PevLL8n2Gsx87Ou8dLQ3V9Iw5nL+nPQop
+                    sncYxtyI+/TkMcf5ozR8h2ZMcz5n+7THIUVWzneYF6F/T95gx7QHLUW2iM5Z1vJw2uOQouvAYxE+
+                    zs3ymA7/ADxMVcZATz7WWV4ATmWMZ8/h+qUQgCp6MS8LfMJ9aY9FSmB4EXpKw/Un5kHGAOzADNqn
+                    PR4pss/p4t2zU9qDlSIrZw+WbLgWoJLT7SuISSOwQxF6SsOU4zSWwMaLgZ7h2rTHJEVWWYSe0jBd
+                    s+HL/42fDN/E7WmPSopqqnfPd9IeqhTVbdy84Y+bfjV0KT/XiUAj9kgRekpDk+NqLtv418wWR/xQ
+                    HtDHgY3SOxzgPSE4y1RdB9ooVXAaz236wJaTQ56lN/dQnfY4JWFfMizC9QA5hvFl2kOWhFVxF703
+                    P/zrvgNYb2cu5Qf6LLjRmMYwPom4zy48pncBjUYlD3NbvutBMgVP+rfhEAbTh17swHZpj1/qJVd7
+                    NeCYel4NeCrD6UsH3ROigVpOJbOYxmReYl3+Lv8PUi3M3/6wfwAAAAAldEVYdGRhdGU6Y3JlYXRl
+                    ADIwMjItMDYtMzBUMDM6MTA6MTYrMDI6MDCVvbHEAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDIyLTA2
+                    LTMwVDAzOjEwOjE2KzAyOjAw5OAJeAAAAABJRU5ErkJggg==" />
+                    </svg>
+                </button>
+            
+                <button type="button" data-locale="br" class="lang__bt" title="PT-BR">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="512px" height="346px" viewBox="0 0 512 346" enable-background="new 0 0 512 346" xml:space="preserve">  <image id="image0" width="512" height="346" x="0" y="0"
+                        href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAgAAAAFaCAQAAADCjC19AAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+                    AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAJcEhZ
+                    cwAADsQAAA7EAZUrDhsAAAAHdElNRQfmBh4FCg9f1LDDAAAw10lEQVR42u2dZ4BW1bWwnxkG6SUi
+                    xRIEFEXq0KRaGMYW49WrQr5EZlAUsCUYFTGJGoy5BkRjMHrjAEoZNDcQK0ZEhl6kdxAbIFaKSJEm
+                    ZX8/BpQyc85Zp+23rGf9mnnPPnvt/Z613n12WSvDcIQMWtGG6sTPVt5jjY9yZWhPNpUtaKwoyct2
+                    FrGEI4afdeSf/81fON+iUovoz3TB9Rncyh85y6LGipK8fMCDvA6QYSCDIdxnWyMOcz9Pe7y2LKP5
+                    pW2FFSWpeZL+UGYgDOAR27oAGVzOh6zydO0z9LKtrqIkOR3Zw9wMU4+1lLOtyxG2ci47XK+6kHlk
+                    2FZVUZKe77kgk7sSxvzhNPI8XHWvmr+ihMAp9M3kSttaHIcXbRJLY0VJXq7MpJ5tHY6jvusVP6Ga
+                    bSUVJUVokJlg6+gmhCsURfFG5UzbGpzABtcrtrPdtpKKkiokmgOY6OGad2wrqSipQoZJpCH1Vs5h
+                    p+tVbZmv6wCKEgaJNAIw3O3B/GEhz9lWVVFSg8RxAIe4l395vPa3vGxbXUVJBRLFASygC3/zfPVB
+                    etCLz2wrrSjJjtscwODINdjDZ8zlAx8lM2lPC+ok0E5GRUk8Bjh96OYAdLJNUZIbRwtPlFcARVEs
+                    oA5AUdIYdQCKksaoA1CUNEYdgKKkMeoAFCWNUQegKGmMOgBFSWPUAShKGqMOQFHSGHUAipLGqANQ
+                    lDRGHYCipDHqABQljVEHoChpjDoARUlj1AEoShqjDkBR0hh1AIqSxmTZVkCxxmlcSgMM65nOVtvK
+                    KHZQB5Ce1OJx8jjlyF/fU8jv2WxbKSV+NCpwOnIlL3L6Cf/bQh9et62YEgEaFVg5hooMZeJJ5g81
+                    eY0xVLGtnhIvOgJIL9pRSEOHzzfQk5m2lVRCRUcACgBZDGSOo/lDPaYx9Ie5ASXl0RFAutCIsbT2
+                    eO1KerDCtsJKSOgIIO3JoA+LPJs/NGM+A/TZSAd0BJD61OYFrvZRrohb+Ny28kpgdASQ1tzAal/m
+                    D7ms5Cbb6ivRog4glalKAf+mhu/y1RnLOE613QwlOvQVIHXpyBjOCeE+G7mZabYbo/hGXwHSkLIM
+                    ZGYo5g91mcJQytlukhIFOgJIRZpQSMuQ77maPJbabpjiAx0BpBUZ9GNx6OYPTZjPQMrYbp4SLjoC
+                    SC3qMoouEd5/Lvl8YruRiggdAaQN3VgaqflDR5bQx3YzlfDQEUCqcCrP001Y5iCPAQ+Lo0KM4w62
+                    2W6w4hFHC1cHkBrkMpKzhGXWkc8coC2FnC8su4lb+Y/tRiue0FeAFKc8g5gkNv9CmjMHgIW05Bnn
+                    x+QkajOBAirZbroSFB0BJDvNGEtzYZlN9GbCCf+7jJGcKbzPWnqw2HYHKC7oCCBlyaQfi8Tm/ypN
+                    TzJ/mExTXhbeqRHzdGkwudERQPJSj9FcLCyzk/4Mc/i8GwX8RHjP+eTxke3OUEpFRwApST4rxOb/
+                    Hq0dzR/G05IZwru2Yxn9bHeH4g91AMlITV5jtDCA5wEe5SI+dr3uU7pwD/tF967I30oMNKokPPoK
+                    kHxcwYucISyzhjyWCK5vSiHZwjo204c37HaNUgL6CpBCVGAoE4XmbxhGW5H5wyo6MJjDojK1eJ0x
+                    VLbdRYoEHQEkExdSyHnCMl/Ti4k+68thFD8VlllPT2ZZ6BulNHQEkBJkMYDZYvMfTxPf5g9TaeYy
+                    aXgy9ZnKIA0snizoCCA5aMAYOgnL7ODXFIZQdzeeF4cFW0geH8TUN4ozOgJIcjLowwqx+U+hWSjm
+                    XzyKeFtYpi1LNbB4MqAjgESnNsO5RlhmHwMZIpzCcyaD3jxNRWGpydzCFxH3j+KGngZMYq6ngNOE
+                    ZVbRg+UR6NKYQloJy2znLvEGYyVc9BUgSalKAa8Izd/wDG0iMX9YQzse5ZCoTHVeYpx4c7ESGzoC
+                    SFQ6MIZzhWU+pad4I6+U9hT60Otmpkesl1IaOgJIOsoykFliM/Ozj1/OPFqJlwbPZqoGFk9MdASQ
+                    ePh7176Tf8aoo7+5iTyWxaijUoyOAJKIDPqwUGz+79I0VvOHV2lSQkwBZ5ryni4NJho6Akgk6vAi
+                    VwnL7OV34oBeYZHPc+K9/1O5mc+saJuu6DJgkpCMO+787VB8QDyLoPhHXwGSgGqMEefhPchgOlve
+                    cLuOS3mQA8K2FmjO4URBRwCJQFdGiaP6rief2bYVP4K/U4q3ijcYK37QEUBCU55BvOsrqHeimD8s
+                    IFs8D1GHtygQby5WQkZHAHZpylhaCMtspjdv2la8BPxEKnqfHsJQJYoUHQEkKBn0Y5HY/CeSnZDm
+                    D5PI5nVhmQs057BddARgi7MZzSXCMnv4PUNtK+5CPs8Kw5XCPPI8hCtV/KHLgAmIn/j788hPivj7
+                    fvIV7OJ+XRqMCH0FSDCq87L4hNxBHqVzUpg/bKAL9/C9qEwVHycflRDQEUDcXM6L4hx875OXdDn4
+                    /OQs3Mxt4g3Gihs6AkgYKjCUd4TmXxzUO9nMH1bSzkdg8Tc1sHi86AggPtpSyPnCMl9zG/+xrXgA
+                    chnpY4tT3pHE5UoY6AggASgO6i01/3/TNKnNH4poylhhmfpMZxBlbaueHugIIA7qM4bOwjJueXyT
+                    CT/HnBaQx4e2FU8JdARgmXxWiM1/Li1TxvyLYxVNE5a5kGX00x+gqFEHEC21eIPRwmmt/TzIRayz
+                    rXqobKQrfdkjKlOBv4nzICpC9BUgSq7iBXHS7NX0SNnAWY0ZS0thmS30EW8wVo5FXwGsUIUC3haa
+                    v+EZWqes+fsLLF6T1xhHdduqpyo6AogGP8GzN9Iz8uDZlTiDGtSgBuWpQtaR/x5kF/v4hm/4hi/Z
+                    HbEOHSjkHGGZDfRkZsR6pSp6FiBmsniIh8Qn3MbTl28j0KYMDWlOCxpSj3rU9FBiC+vZwEcsZwUf
+                    C3+vvVGVIfQRljnMs/QXbjBWQB1AzFxAIa2FZbZzNy+FrEdNOtKZjrSkQoC77GUJc5nNe2wJWb8b
+                    KKCGsMxKerAiZD1SH3UAsZFBb/5KJWGpIm4OMYVmGbK5hp/TKuTvbh1vMYGZIf4G12YEPxeWCT/t
+                    aeqjDiAm6jCCq4Vlwnygy3IZ3bk20gmz7bzOOIqEYUBLw6/DvIXPI2xjqqEOIBZu5HnxkHYFeSEN
+                    advQmxtji7S7jXGMCOmAUiMKaSMss4O7xRuM0xd1AJHjZ1LrEE/ySAgD6srk0Vu8uh4GSxhBId8F
+                    vk8W9/GYeO//eG5nm4VWJx/qACKmI4U0EJbZQD6zAtdcmzv4tdUI+zsZxZAQBuTtKKShsMxGbhZv
+                    ME5HnC3cOIOKo5Qzg8whI2WMqRy45gZmpNkvrjkK9psXTP3A7alghprDwpoPmwJT0fozkOjiiI4A
+                    gtCEsWQLy2yhN28ErPen3E/fhEq3fYD/44+sD3iXK3lRvHV6DT1Yarv5CY1uBY6EDPqxWGz+k8gO
+                    aP5VGcxH/CahzB/Kksca/iKOB3w879BC3DuNNbB4EHQE4I+6jOZSYZngeXwzyGMwdWw33oGvGMgL
+                    AXcP+sk5/B55fGK78QmKTgKGjp+g3vPJDxjgogkjaG+76R54j96sDnSHeozhImGZVAqgEi76ChAq
+                    1RnrI6j3YC4KZP5lGcDipDB/6MBSBgV6RdlAFx4ULpFWpYB/i3dipD06ApBxGSPFQb3XkcfcQLU2
+                    4yWa2W66kBXcxKpAd2jOWHGrN3Ebb9lueoKhrwAhUZ6B9BeOmQzDuTfQAdsM+vEXyofWip18euTg
+                    73dHNvSWoyJVKMepnEVdTgmtpn3057lAcx52ejzVUAcQCnZ+j05lLFcF1n0ri1nOStawwWX3XCZn
+                    UI8GNOdCWoeQvPst8gMecvYz5lpLHosC654qqAMITBnu50/i38ZXuJ2tgeptySvUD1B+C5OYxlzW
+                    +iqdRRMuJIcrAx0v+oQbWB6oF6rzLDcJyxzkKR4O6chSsqM7AQNKPTNTvDtuh+kTuN4eZo/v3Xkf
+                    mMdMW5MZSvvLmhzztPnYty67za8C69DNbBPXO880tP7sJIK4GLjb5+ku+WaX+NGba84JWGuGeVS8
+                    MbaYLeYp0zKSnmhrCswOXzodNo+YjIC11zXTxPXuMf0C15v8og7At9Q0r4sfuu/NQFMmYL2nmEJf
+                    hjbL/D9TLtIeqWR6mbm+dBtlTglYd4bpZ/aJ651oTrf+HNkVdQA+5UrzpfhxWx3Cr28lM1lc70Ez
+                    zlwYW890NBN9uIBJIRzcaWKWiuvdbK61/izZFHUAPsTe2bRqZra43gmmRew91MKME/fQLFM1cL32
+                    zl8mq6gDEEs786H4EdtouoRQ86lmobDeIgvGf1TamDlCbReYU0Oot6P5RPz9rDcXWX+u7Ig6AJFk
+                    mQHme/HjNS6UB7ua0Pw/NtdZ7q0Mk2++ErqA4KMATFVTIP6ODppBgechklHUAQikkfgX2Jjtpkco
+                    dVcSDf4PmMGmgvX+wmCqmb+aAwLNZ4YUxONGs1X8XS00jaz3V9yiDsCjZJi7fKy8v2vODKX2U0yR
+                    oNYVppX1/jpWOogG5ZNM2VBqPdO8K/6+dps7rPdWvKIOwJOcYd4RP0zhrTNnmNGea03MQFhVRIPy
+                    l0Prt9/4cNrPpdXuAHUAHsTPcHKxaRxa/Y96rnWrucp6b5Xei9736z0cWq2NzWLxd3ef9b6KT9QB
+                    uIifCaVDZmiIE0p5nhfUloQQfjNKaWje99iSw+aXodWaZQaag6Lvb685w3pfxSXqABzlErNBbP7r
+                    TOcQNWjpeRD7rwSZ9nOS6maSx9bsNs1DrLezWSf6Dh+03lNxiSPpHRGoHE8wlbOFpV6kBbND0+FU
+                    /u0xfecz/JK9MfaOP7bzMwZ7urIib4QYwWc2LXhRcH1OzP2SqKTxCKCpWSb+7d8c8sp7hsdNtYfM
+                    ndb7SyL9PfbnmyFPx11nNnuseY31PopLXAw8PR1AhuljdovNf1Lob473eKr3oOllvcekcrvHeY27
+                    Qq63lnnDU71LrfdQXOJIer4C1GUKBcJ4N7u5gyv5MlQ9mvEXT9ct4vMQovPEy/PchZdwYENoEmq9
+                    m7mO2z2EBPvIUr8kGOkYEegmnhXHuJlPXuiPTDkWCoKMfc88pjKF+UkU56Y3BR6eoOVcGEKS1ONp
+                    SCHtHK/Ip9Biz8SJRgQ6Rqr5OGl/wAwKaefa8eJ97f9YdpvJZoDpbLKs96UXechTm8LbE/CjZJkB
+                    DrkT10UcNyGRxJH0GgH4CTD5IXksiECXRiwLFDt/F/MpooglBIm7Gz3PcafrNftpxZoI6r6QQs4r
+                    4f/fczkzbHdMbOgIwGD8nvD/R0SbbjPNe75+/0/mC1NobjF1rfdvaZLlaZ1jVkSbcyuaf5z0re8w
+                    /2W9V+IUFwNPDwfQyqwWm9ZX5meR6XNrSOb/Ix+ZAvMLU8t6T58sVcwKD/rnR1Z/JzP1hxAie8xo
+                    08B6j8QrjqTDK0AZHmCgOKj3a/QJGNS7dKrwgTgNtlfWUUQRRQGj8YdLQxa75g3exHnsjEyD2jSh
+                    OltYlARbqcImzfMCnM0YLhaW2cX9kSaafIL+Ebf6EMsoYg7T2RVxTd74f/zT9Zr/4SHbaqYkae0A
+                    ujFMvOQ3jzw+jlCnunwYaPpPwj7eYypTWMjBmGosjZHc7KrruXxhWctUJG0dQE2GcZ2wzPf8kSEB
+                    89u7MYzesffFLmYyhamswNaaQSUW0cjlmn94WDGIjyq0pSY7WR7y9q+4SVMHcDUjqCMss5o8lkas
+                    Vz0+CDEBp5StzGO2pcXDzsx0eZ4OcD7rbXXNcZzPn/hvygJgmM0fmGVbJd+k4TJgJfO8jyW/v5ny
+                    Meg2MvT5fz9sNKNMfkjBzLzLMFe9hlt/djCY7ua7k56O500l63r5E0dScQTQjkIaCst8zi0UxaDb
+                    mayz+Pt/MsVrBtMiW+84nmqs4QzHK/ZTn68s90lXJh757T+ej8hjvmXd/OBo4al2GCiLAcwSm/94
+                    smMxf/i1q/kPYTSfxaILQAP6MI5NLOVJfkbliGvbwf0uV5Tj7tjaXjLleaFE84eGzGZQQrnvEEit
+                    EcB5FHKhsMx27uLlmPSrwkaXNYl5dMQADcilMznijcvBKF48LGI2+yKrY4bLouy31OW7WFt9PLcy
+                    wvHzBeTxoUX95KTJHECGucPHCf8p5qcx6niHizaHTYcT2tTC/NZMMDtDnwNwZo+ZbH5nLgyc5LQk
+                    udS19r5WnyP3dLC7zR1JFVXYkVQZAdRiBNcIy+xjIEM4HKOWS2jp+Pkr3Fji/7NoSw45dKR8jNrC
+                    DmYwlSmsJsw1g8nkOn6+mDaxtvJ43nddrAR4l15Js2chDZYBr6eA04RlVpHHsli1bOtyqtDQhiWO
+                    V2TRglxyuTjmN9EtTKeIOawO5W5tWODyXLWKfDG2dD7iXE/XbedOD7sbE4EUfwWoal4UD3EPmcEW
+                    ssS5BR+fIGjzNeZps1y81BmU9eYFc5M5PXBPvOlSz3MWn6epgv4YGUqew6jFkWQfAXRmDPWFZTbQ
+                    k5mxa1qWrznVpS1zhPesyaV0phOtY25L8eLhFLb5LJ/DFMfPt3K6ta3LD/GY4Or19Ez4LUIp+wqQ
+                    xUM8RBlhqfH0tXJS7mf8x/Hz9+jo+951ySGHri5r7GFziGVMYSqzPUTgO54MVrpEArySSbG25Ufq
+                    8Iko/qLh7zzAfkvaetPQ8VNnbA9fSpcmZol4CLvF3GBNX7fcf2Gch29g+phxPpKcBeOAWWQGmVxR
+                    kK07Xe75gsUn635xDywxTazbQ+niSHKOADLox1/EM+Lv0MvaLrOybHbcAbCNs0I7qZ5JNjnkcFHk
+                    G3uOZzezmcoUlnk4TFWZz6nm2B+1rb0EZPB37hKW2cfvGEpiBmdLuRHAWWay2EfvNndaXbu9xEW/
+                    pyOos6zpbB4x080+cW8FY5t51dztmjj1OZe7hJl8TS59fewpKTJnWbeNksSR5HMA3XwMcReY8y1r
+                    PchFw7YR1l3B5JqBZrL5Xtxvwdhkxpk+pSYzvcSl9J8tf2MNzGxxi7ebPOv2cbI4klyvANV4gj7C
+                    Mgd5ikdCjzsvZTnNHT5dzzlEP3ysTHtyyaVVzN/qV8ymiLf5/Lj/ZvK5Y1i0JbGvbZxIFvfxWCnn
+                    AkpnPLf7Xh2JhpRZBchhFD8VlkmMZZqabHLsySE8EKM2dehCV3LEy6fBMKxmClOZwY4j//lf7nC8
+                    vibfxKphSZQWWNyJr+nFRNuKH0NKzAGUN4N+iOzqnTGmsnXNMZjrXPScbfqZZrHPUdQ3t5qXzFfi
+                    Xg3GQTPfPG5yTQWT43LlNda/N4zfcPIFEYWT9yOOJIcDaGqWih+0TeZa63oflSc8avxP09ucE7t2
+                    TcyvzevmW3EPB2OfmeliWIOsf29H5Qrzhbh9q00r63oXiyOJ/wqQwW8YLA6iaXPJ72Tm0kFwdfE7
+                    8ztsjFXHMmTTmU5cQdV4O6dUZnORbRV+wE98yQM8zmMRx5f0QlLPAZzNKC4VltnD7xlqWe9jKcMu
+                    KvgoV7zhdmrMb8JHDxxdFFvk4tLYS5UEMJ8fyedZ1+wGJ/Ie+ZFGmPZCEjuAbhTwE2GZKPL4BuOC
+                    QHnvDrOW2RTx7g+TZ/FQkY7k0pl2ZMVa77Gcl2DfZD1Gi3NM7KR/pDkm3ElSB1Cd5/iVsMxB/ich
+                    Bl3H4yUphpe2LaeIImbFvO+8Cu2sLB4C3MgrsdfpTCa/5gnxYexX6RtT1MWSSEoH4CeP71p6sNiS
+                    vk78mT+EeLfiDbdTWRqzozuDruSQQ90Y63yUgbG20RvNGOu4q6MkNtGbCZb0TToHUIE/0l8YrtQw
+                    nHvFp9LiYRzdIrjrd8yzkh68AZ3pxNWxRCv8p3gMGA/lGZhET2iSOYC2FHK+sMwmbnU5bGuThZGG
+                    uNrMDIqYHHtCjQbkkkuueI5GwjzR6km85DKSs4Rl1pEvjvkQnCRyAFncx5/Eb1iv0DcB9oyVzhZx
+                    uDI/lLzhNmrKkE0uuXTytc7hxiZxbqc4qcaz9BCWOchTPMyBWPVMGgdQn9HilV/7c6xuVI41P69h
+                    NVOZcsyG23goT0dyyKFtqGsGhsrsibUdUrrxvEucp5OJO7B4kjiAfJ4Tn1+fSz6fxKahPxpaiSJ/
+                    ND34DHbGWm8lOpBLLi1DSjlzDuti1V9OXUbRRVhmL7/jmdjmbpLAAdTiBX4uLLOfh/hrrEG9/dGB
+                    uRZrt7V4eBod6BTC4mE7l0jKiUAm9/Jn8bapt7iVzbHol/AO4Bze8RiK+UfiyOMbDj+3tvxzLHuY
+                    SxFFLI3ZZdbhInK5grN9lv9ZQp2rK50mFLrkfDiZDVzJBzHoluAOoDorhbOph/krDyV0GMZjyWe0
+                    bRWO4RumMZWpsTx4x3I+OeTQhRrCcvkUxqypX8rxZ+4VvvhspHkMczUJnhx0sND8N9KV/klj/rjM
+                    a/wfV/EkS2L7Xa7Bjfwva/mcMfQUR1fwzwf8g27UohX387Yg91+8UQ2DsJ/+dBUe4KrLINtq2x4B
+                    VOUrURDmxIu34sZv+avDp88dyYZra8PtOoqYw5SY01wdXTzs7BrY9Z6EOtblTlWGiGJW7eX0yMcA
+                    CT0CyBGY/zZ+QfckM39cQkodzcK7iyIepA1nkceoGA8CN6APo/mMZfyVn4vPuvnlEIsZzGWcyuVM
+                    c7zS9olEKTvpyy8Ez2gF8VnXkLHtALyHpSqiBeMsa+sH50f4xFDgXzKWWzibc+jJsNh+lzNowW+Z
+                    wLcsYhC5saUg3ctkl51x8eZADIdxNBbsS403MNtJ2DvqqUDpw7N1rGMM8Wy4/ZEytKY1A35YPJxp
+                    PZiqEjG2RwDed7DnspzulrX1g7MJuf3CrWMY3alJGx6kKLTUIW5k0ZoBTGYbkxlA60ifEufRRvJM
+                    9v5Id9Zwteer4z7DcQK2RwBT2eN5FuBU/sWNSTcJ6OwAvL3jHmIxixkce3rwSuSSS3F68DnMjuSw
+                    tXMPJNsIRDoJuNtlDiRybI8AdgrXebux1Pa0iRDn3zDJCggcPDJ5dhrX8DTLY9tMWpNu/I1FfMpI
+                    8kJOQZpKI4BLWSnMWzEm5q3aJ2HbAcAA8drpFIYk0eyw85q39CBJMbt4i3vJpjbdKYgxbFZdbmYM
+                    X/A+z3G9T91PxPmkpPcdA7YpxxCmCMOlfMqDttW2vQ8AoAHv0FBYJnm2Al/NWw6fThcfJCmJoBtu
+                    /VIctjRYtMLZdHL49CreiblN/vC3FfiKWA6KJfhWYEjtw0DtmOfw6SqahViX3w23wTjAfKYylXm+
+                    Buzv08jh0wtZGGtb/KCHgUIhVY8Dn+s4RN8VSRT+4sXDyxwTkofPXuYwh9nMEAW82OX4rTewPUvu
+                    ih4HDo30DAhSI7JVjSzakUMOHWKeMdnODKYwldUerq3jmL4lGQKCyAPXa0CQUknNkGCbqenwaZvI
+                    IxlXpBM55NCaMrG2+2umMpWpjr/hHR13An7tmD/YNtV5lpuEZRIuJFji5QZsa9aK87B9ba62noGt
+                    dFngqHt8GeWrmf8yQ81KcarLoKwzI8yvTJ0SdbrZseRc699d6ZJrPhP3xCemkwVNHbG/DHgiC2nJ
+                    YOHkXm0mUEAl26qXwgbHT8OcBHRmB2/Sj2bUpjvDAmUrklGfW3mJr/iEArqdsHiY7VgyUd//yzOI
+                    ScJj7IZhNLcQE9hVL2ds+dfLzOdi//q+aW39d6EkecxR63es6VXP9DJjzZe+ftX9c9AsMIPM5UfS
+                    Z09zvHag9e+uJGlmlotb/bXFZOeOJKoDwFQ3L4m7+YAZaMpYf0BOlG6OOm81GZb1a2zuNq+ZbX6s
+                    OQD7zHTziEtS8uutf3cnSqbpZ/aL2/qKOc2izo4k1iTgiaRGctBGvO/4+QWsta0ikMkFdCI3gdKD
+                    Q0PrmXWPR5ODxk5qpAff6bjn/zZesK3iMSROevDdVE2ojV4pmR488SYBj+dTcrhHuMOsIn9jYgIt
+                    IB1y2bQcxmbg8Dh64KgGVzGExRZNML5Iie7U5DVGC83/AI9ykXXzdyHRHQAYhtKGZcJSV7KMa22r
+                    /gPOmQGuSMhvYTfv8ABtqMZlDGYx8aYgBZhtuwt+4AqWcZ2wzBraMzDhUtWfRCI+eiezig7ipcFa
+                    vM6YBIkq67z4cxqtbSvowHdHohWeTneGxbowlxhLZhUYykThEWjDMNqyxLbqXkj0OYBjyWGUOJD1
+                    enoyy7bi1GSTY0/+Dw/ZVtEz55BDV7pQK+J6DlMzAUK/XEgh5wnLfE2vhEpnktSTgMdTjSeEAReK
+                    N18+Yj2yzDJaOHz6iTgzkn2ijla4ONKk6l7I4j4ec4nqfDKJF7g+ybYCu0k3s1W8DrvAnG9Z67+4
+                    aNjSer/6kzKmtRlgJpid8o0ALjxmuWUNzGyxzttj3NjtXVwM3O3zxJM65j/ir2aPGWAyLep8sYt+
+                    T1rv1WBS3nQxj5k55kBoDsDGrvmjkmH6mO/EGheZs6x/DyWJI8n1CvCjVr15WhhPDyZzS8wZcH4k
+                    iy2Op/O38NMki39XMlW4mBxyaB5wenkbtazNoNdmhDg8zT4GMiSBli2PJcVeAY7KBWax2Ed/a35l
+                    Td+RLrr9wnqPhimnmWvMILPI98nD4dY0v95sEWu70rSw3uOli4uBJ6sDwGSZgeag+MsaZ35iRdur
+                    XPSaab0/o5CzTL4Z7ePg7GVWtK1qCsSaHjZDTTnr/ewkjiTnK8CPtKdQPIP+KTczPXZNy/KVS6y+
+                    Do7RA5ObBuTSma4e19O3cAYHY9exA2N8PEs9mRG7pjJS9BXgqFRJGq/9vOvYxHZfRi2ZJtvca95y
+                    nSp8NnbNyibVaFImKT0CKOZ6Clziy5/MKvLEG4yD0cYlwu0hmrmcG0wNmrHMZYqwVcwh3xtTSCth
+                    me3cyT9j1dIvSX0YyBuv0oQJwjJNeY8BsbZ/kcvm0DIMjFEbezzu0usLYzX/DPqwUGz+79IkSczf
+                    hdRwALCZ/6KnMI9MeQYxWby5OAjDXT6/0SVEVirQ0XWJbUSM2tThPxQIF5T3cg9X8mWMWkZIarwC
+                    HKU+hY55ZkpiBw/EFrChMhtdts7O4hLiP3cXJ9O5xPHzbdRld0y6dON5cYKzheTxQUz6hUMavAIc
+                    ZT2X8qAw6HI1ChgXUy6d7yhwueIi8mPRxBa/cDF/+N+YzL8aYxgnNP+DDKZzkpm/C6k1AijG3wmu
+                    W3k7Bt1qs8ElH+43nJ/QWQ6CUJU1nOl4xX7q8XUMmnRllDCqL6wnP4FiFHgnjUYAxSwgW5x4qQ5v
+                    id8F/bCJl12uqMGfI9fCFn92MX8YHYP5l2cQ74rNv5DmSWn+LqTiCKCYK3hRnMn+fXpEHsahPmtd
+                    ch8dpn0SpMSU04Z5LrmJ9nOeMFm8nKaMdTyaXRKb6c2bEesVHWk3AihmEtm8JixzAfMZGHECrfWM
+                    dLkik1ExjEXiphKFrj07PGLzz6Afi8TmP5HsJDZ/N5J+J6CzdHOJPF8S75lzI9XpLLPXVYeR1nsu
+                    bBnu2uY95oxINTjbTBc/CztNH+s9F1RcDDy1HQDmbDMj4b72xz3o0NN6z4Up13to8aORapCIPwXx
+                    SJo7AL/ZXF6NMJtLFQ8Jub4zF1jvubDkXA95hz4zlSKrv7p5Wfz9J2aWKT+S9g4A4y+f26YI87nd
+                    7KH+VUfy5yW7VDErPbT2psjqv9x8If7u1yRonkk/og7AYDDlzSBzSPwgjDGVI9Em08zxUPs4q2HM
+                    wpEyngK4zYgoQ2IFM1QclOSwKYhwNBK/qAP4QfzkdF8XUXS6xmafh9oHW++zoPKUh1bujShoa1uz
+                    Vvx9f2Wutt5n4Yo6gGOkmikUPxIHzCBTNgJd/uip9rut91kQedBTG/8QQc1ZZoCPmZ/xpob1Pgtb
+                    1AGcIN3MN+IHY34Ev1GneJqXOGxusd5jfuVuT327NAL3Wt/MEn/HO1Jgya8kUQdwkvzUTBU/HntM
+                    v9DfU5t62BFgzEHzS+s95kdu8fT2vTuC1Y58s0v8/c4xDaz3WDSiDqAEyTB9zG7xQzIp9K0qv/FU
+                    70HTy3qPSeV2j1Out4dcby3zhvh73Wc5a0S0og6gFGlslogflc3mv0PVIcNM8FTv4SSbC3jYY3++
+                    FnK9V3nYYXEiq0y29f6KUtQBlCp+Q0FWD1GHn5iPPdY7NEl+pTLMkx5b9KGpFmK9yRMeNl5RB+Ao
+                    HTwb4I9sMBeHqEELzy8j45Nga1BVz0Pw70zTEOttbz4Sf4+fmkut91f0og7ARfykgzhkhppTQtPg
+                    V543q6wyja33l5M0Mu97bMlh0z20WpMrRUzcog7Ag9zgIyHUCtM8tPof8Vzrdwl8TOg6s8NzO34f
+                    Wq0XmEXi7+7bCLceJ5qoA/AktT1Oxx3L3tBmjzNccwcey5gE3Koq23T7Qki1+svj+64503p/xSfq
+                    ACJ9mMJKCn2KmSSodXWCHVbpIHoDfzukrT9+EsWH57STRdQBCKSRWSh+pLabHqHUXdHMFNR6wAxJ
+                    kCnBKmaIa7KvY5luKoRS741mq/i7Wm6aWe+vuEUdgEiyzADzvfjBGmdODaHuqmaBqNZ15nrLvZVh
+                    fiU8bDvfVAmlp+QTtwfNoBAnbpNH1AGIpZ35UPx4bTRdQqj5VKELMGaqaWmtn9qKxizF5h/GzHtH
+                    84n4+1lvLrL+XNkRdQA+xO858uCD8spmirjeCRacQHMzTtxDM0zVwPWWS6i4Dskg6gB8ypU+tpWu
+                    DsEUK4qmA4s5ZP5t2sfWMx3MG2LjN+btEN79m5il4no3m2utP0s2RR2Ab6lpXhc/bt+HEEuurGhR
+                    8EdmmV9GvLG1ornVLPal24jAM/8Zpp+nICrHM9Gcbv05sivqAAKJn6Olc805get92MdvrDHGbDVP
+                    mzYR9EOG6WSe8RDcsyQOh7Dtp66ZJq43iiPcySfqAAJKPfFUVzjBJX7p48DyUT42j5v2IUW1LWPa
+                    m6fMRt+6fGd+EViHbj5czzzT0PqzkwjiSOqmBguTMtzPn1wSep3MK9zO1kD1NudVzglQ/hsmM405
+                    rMFfyvEm5NCVS6geQIePuJ5VgXqhOs9yk7DMQZ7iYWGe6FTF8btXB+CV5oylmbDMJm7jrUC1VmcM
+                    1wTWfRuLWcFK1rCBLS7X1qYuLWhONs2pFrjm17mZHYHucBkjXVOKnsha8lgUWPdUQR1ASJRnIP2F
+                    2RQNw7k3UMb7DO5kCBVCa8V3fMo3fMM37GEvAGWoSjkqUoczOZNyodW0h/t4PtAd7PR4qqEOIET8
+                    /B6tI4+5gWptzMvilJa2WcaveD/QHdpQSCNhmeBjrtQjTbMDR8NkmvKSsEwDZjCIsgFqXUNbHmS/
+                    7cZ75gCDaRfI/MswgDli83+Fpmr+MnQE4IduFPATYZn55PNhoFobMZzOtpvugZn04YNAd6jHGC4S
+                    ltlJf4bZbnpCoiOA0BlPNtOFZdqxjH6BHOpaLqY7G2033pEv6UuXgOafz0qx+b9HKzV/P+gIwC8Z
+                    /IbB4imzSfTiy0D1VuZ33Et5280vgb08xaCA0281Gc61wjIHeJzHOGS7+QmLTgJGRhPGki0ss4Xe
+                    vBGw3lrcS7+EcgLfM4o/8UXAu1zJi5wuLLOGHiy13fyExtnCXXZT2d7FlOhi72za2Wa4j53xUbDP
+                    FJi6gdtj7/xlqosjOgIITkcKaSAss4F8ZgWuuRZ3cjc1LLZ9J6N4IvAvP7SjkIbCMp/Rk2kW254s
+                    6CtA5FRlCH2EZQ7xJI/wfeC6K9GD3rS20OpFDOelELbcZHEfj4mXScdzO9sstDr5UAcQCzfyvPi3
+                    eAV5rAil9pbcRndOi6mtW/gXL7AslHs1opA2wjI7uJuxMbU1+VEHEBN1GMHVwjL7GMgQDodSfxZd
+                    6c51nBphG7fxGv9iGgdDuVsGvfkrlYSliriFzyNsY6qhDiA2/D7QN4fwFn2UMmSTyzV0CHmPxxom
+                    UMSMEE/Y1WYEPxeWCdNhpgvqAGLlAgrFb+TbuVu8wdiNGnSkE51oRcUAd9nDYuYwh7mhv2/fQIH4
+                    lWklPUJ6ZUon1AHETBYP8RBlhKXG05dvI9Amk3NoTjPOoz71qe2hxNesZz0fsZLlrIvk19bPpOlh
+                    nqV/CJOm6Yc6AAu0p5BzhWU20lO8wVhKBU7nNE6jBhWo+MM+xv3sYS9b+YatfHXkkHB0dKBQHObk
+                    U/KZGbFeqYo6ACtU4Unxr5zh7zyQRKf+5JTlD75GR33Yblv1pEUdgDWu4gXx1tbV9AhpgS3xaMxY
+                    WgrLbKEvr9lWPKnR04DWmEg2bwrLNGEeA1Lwe8mgDwvF5j+JbDX/KNERQPTk8xyVhWXmksc624qH
+                    SF1G0UVYZi+/4xn8hTNVfkRfAaxTnzHiUB6pFOCiG8+LtyctIC9gABWlGH0FsM56uvCgcAmrKgWM
+                    t3rQJxyqUcg4ofkfZDCd1fzjQEcA8dGWQs4Xlvma2/iPbcUDkMtIzhKWWU8ec2wrnkLoCCBBWEhL
+                    8TttHSZQIN5cnBiUZxCTxOZfSHM1//jQEUDcXM6L4sDi75PHYtuKC2nGWJoLy2zmNibYVjzl0BFA
+                    QvEuTfmnsMwFzGOgePuMPTLpxyKx+b9KEzX/uNERgB38BBafRz4f2VbcA/UYzcXCMru4P2XWPBIN
+                    HQEkIONpyQxhmfYso59txV3JZ4XY/OdpUG9bqAOwxad04R7hvv+K/I23xZuL46MmrzGaKqIyB3mU
+                    znxsW/V0RV8B7NKUseKsf5vpLd5gHAdX8CJnCMu8Tw+W2FY8xdFXgARmFe0ZLDxzX4s3GCPeXBwt
+                    FRjKRKH5G4bRRs3fLhnmsMOvvFEHEQtdGeVju0w+s20rfoQLKeQ8YZmvuZW3bSueFriMAJyi0Hxj
+                    W/c0YQpNKRSWqc80BnGKbdXJYgCzxeY/nqZq/olAJmsdPl3r+T5KMHaQT3dh3L1i05NuLg6XBkwX
+                    pz7fQV+6649LYpDJ6w6fvu7xLkoYjKcJE4Vl2rI0YM7hIOSznE7CMlNppkt+iUOGqcrH1Czxs82c
+                    yy7bCqYZGfTmaXEc33fpFWJgcW/UYgTXCMtoUG8buMwB7CSvxNTKh+ml5h87hmG0Fc+MX84qfhmr
+                    ntezWmz+q+ggXvFQIiYTmMQvTsrwtptuSX0MNZlZQ3seFea7r87LjBNvLvZHFQp4RZiGzPAMbVI2
+                    1mEy80Oy6RFm+5GMwd+a4SGke1YJJh3MR+JE3RvMJZHr1d6XXpda78/0FZf04D/6glM4l5ps4aMQ
+                    0z8p/vGTPiPawOKJlfJE8YZLTEDb6ilOXE+BOOfvKnqwPAJdGlNIK2GZ7dzFyxH1jeIN3QqcxLxK
+                    U/EZ+aYRBBYvDuotNf/JNFXzT2x0BJD4+Ms5PIVb+CwkDerwAj8TltnLo7rklxDoK0AK0IAx4i03
+                    O/i1eINxSfgJ6r2QPD6IqW8UZ/QVIAVYx6U8KJycrcYYcUDuk+9R4DOot5p/UqAjgGTC36m7XuIN
+                    xkfJYRQ/FZZZT09mWegbpTR0BJAyLCDbR2Dx/1Ag3lxcHNR7stj8C2mu5p9M6Agg+fATeWcNeaIN
+                    xk0pJFtYx2b68IbdrlFKQEcAKcYkssXnNBsLAotn0I9FYvN/h2w1/+RDRwDJSj7PCsNvwnvku4bf
+                    PJvRXCK87x5+z1DbHaKUgi4Dpih+4u+75Rz2k69gPnlJka8gXdFXgBRlA124x0fO4dJO8lXnJfGJ
+                    woM8Sic1/+RFRwDJjp8cfJvofdIG48sYKc5ZuJYeSZezMP3QEUBKs5J24jAbtXmTMcdsLq7AUCYJ
+                    zb84qLeaf5KjI4DUIJeR4sDi68hnDtCWQnFo0U3cqgFjkgSdBEwLTuV5ugnLHOQx4GGyhOXGc7sw
+                    grFiD48O4CyupzWnsZVFvBp7iEklDPwc25Hito6gJBoeHMApPM6vj0kysZ+/8wfh/LKSCNRlFF0i
+                    vP9c8vnEdiMVEa4OoALvlLCePIOr2Gtbd0VMBr9hMOUiuPMBHucxYbBSxT6uDqCQHiV+Npqbbeuu
+                    +KIJhbQM+Z6ryWOp7YYpPnBxAB2ZU2rBDsy3rb3ii7L8wUf4ztKINtSoEi0u+wBuK/WzDIfPlMTm
+                    AAO5OKS39Y10pZ+af2qSyaUOn0Y5naREzVxahTBfP56WTLPdFCUqMsw+hwmjfVSwraASkBsooIbP
+                    stu5m5dsN0AJiMscgPNOIFt5Z5XwqM0LXO2jXBG38Llt5ZXA6FmANGcT19D3pOyPzuzjQa5Q8099
+                    dASQLjRiLK09XruSHqywrbASEjoCUIC1HnMOH+YZ2qj5pws6Akgv2lFIQ4fPN9CTmbaVVEJFRwDK
+                    D8wnm2dK/bSQ5mr+6YWOANKRK3mR00/43xb6iGMNK8mAjgCUE3iHbEYcs7dvP8NpquafjugIIH2p
+                    wSU0ANYxg29sK6NEhm4EUpQ0Rl8BFEUpGXUAipLGqANQlDRGHYCipDHqABQljVEHoChpjDoARUlj
+                    1AEoShqjDkBR0hh1AIqSxqgDUJQ0Rh2AoqQx6gAUJY1RB6AoaYw6AEVJY9QBKEoaow5AUdIYdQCK
+                    ksaoA1CUNCbL5fMBthVUFCU63IKCKoqSwugrgKKkMeoAFCWNUQegKGmMOgBFSWPUAShKGqMOQFHS
+                    mEy+s62CoiiW2JnJBts6KIpiiQ2ZTLStg6IolpiYYc7mA8rZ1kNRlNjZx/mZfMojtvVQFMUCD7Ex
+                    E3iCJ21roihKzAzhqaPLgP25jrW29VEUJSbe51oeAMg45jBgK1pzJuVt66YoSmTs4wsWsfTon/8f
+                    FpPcEM4u/R0AAAAldEVYdGRhdGU6Y3JlYXRlADIwMjItMDYtMzBUMDM6MTA6MTUrMDI6MDCkVatZ
+                    AAAAJXRFWHRkYXRlOm1vZGlmeQAyMDIyLTA2LTMwVDAzOjEwOjE1KzAyOjAw1QgT5QAAAABJRU5E
+                    rkJggg==" />
+                    </svg>
+                </button>
+            </div>
+
+            <p class="intro">COPYRIGHT © 2018 - <span id="js-year"></span> | MATEUS DANIEL</p>
         </div>
     </footer>
 
     <script src="dist/js/vendor/modernizr-3.11.2.min.js"></script>
     <script src="dist/js/plugins.min.js"></script>
+    <script src="dist/js/jquery.js"></script>
+    <script src="dist/js/jquery.i18n.js"></script>
+    <script src="dist/js/jquery.i18n.messagestore.js"></script>
     <script src="dist/js/main.min.js"></script>
+    <script src="dist/js/i18n.min.js"></script>
 
-    <script>
-        window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-        ga('create', 'G-SXE45XFPWY', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
-    </script>
-    <script src="https://www.google-analytics.com/analytics.js" async></script>
 </body>
 </html>
