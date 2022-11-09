@@ -49,7 +49,11 @@ function scripts() {
     gulp.src([
       './app/src/js/modernizr-3.11.2.js',
       './app/src/js/plugins.js',
-      './app/src/js/main.js'
+      './app/src/js/jquery.js',
+      './app/src/js/jquery.i18n.js',
+      './app/src/js/jquery.i18n.messagestore.js',
+      './app/src/js/main.js',
+      './app/src/js/i18n.min.js'
     ])
       .pipe(concat('script.min.js'))
       .pipe(uglify())
