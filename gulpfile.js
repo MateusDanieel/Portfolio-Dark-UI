@@ -16,7 +16,7 @@ const uglify = require('gulp-uglify');
 function browserSync(done) {
   browsersync.init({
     server: {
-      baseDir: './app/',
+      baseDir: './docs/',
       index: './index.html'
     },
     ghostMode: true,
@@ -35,11 +35,11 @@ function css() {
   return gulp
     .src([
       //'./node_modules/normalize.css/normalize.css',
-      './app/src/scss/*.scss'
+      './docs/src/scss/*.scss'
     ])
     .pipe(concat('style.min.css'))
     .pipe(postcss([atImport(), autoprefixer(), precss(), cssnano(), lost()]))
-    .pipe(gulp.dest('./app/dist/css'))
+    .pipe(gulp.dest('./docs/dist/css'))
     .pipe(browsersync.stream());
 }
 
@@ -47,28 +47,28 @@ function css() {
 function scripts() {
   return (
     gulp.src([
-      './app/src/js/modernizr-3.11.2.js',
-      './app/src/js/plugins.js',
-      './app/src/js/jquery.js',
-      './app/src/js/jquery.i18n.js',
-      './app/src/js/jquery.i18n.messagestore.js',
-      './app/src/js/main.js',
-      './app/src/js/i18n.js'
+      './docs/src/js/modernizr-3.11.2.js',
+      './docs/src/js/plugins.js',
+      './docs/src/js/jquery.js',
+      './docs/src/js/jquery.i18n.js',
+      './docs/src/js/jquery.i18n.messagestore.js',
+      './docs/src/js/main.js',
+      './docs/src/js/i18n.js'
     ])
       .pipe(concat('script.min.js'))
       .pipe(uglify())
-      .pipe(gulp.dest('app/dist/js'))
+      .pipe(gulp.dest('docs/dist/js'))
       .pipe(browsersync.stream()));
 }
 
 function watchFiles() {
-  gulp.watch('./app/src/scss/*.scss', css);
+  gulp.watch('./docs/src/scss/*.scss', css);
 
   gulp.watch([
-    './app/src/js/*.js',
+    './docs/src/js/*.js',
   ], scripts);
 
-  gulp.watch('./app/*.html', browserSyncReload);
+  gulp.watch('./docs/*.html', browserSyncReload);
 }
 
 const js = gulp.series(scripts);
