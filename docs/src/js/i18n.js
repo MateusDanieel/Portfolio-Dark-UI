@@ -14,6 +14,7 @@ var age = '';
 $.i18n().load({
     br: {
         // NAVBAR
+        'menu_home': 'Home',
         'menu_sobre': 'Sobre',
         'menu_stacks': 'Stacks',
         'menu_portfolio': 'Portfólio',
@@ -142,6 +143,7 @@ $.i18n().load({
     },
     en: {
         // NAVBAR
+        'menu_home': 'Home',
         'menu_sobre': 'About',
         'menu_stacks': 'Stacks',
         'menu_portfolio': 'Portfolio',
@@ -284,49 +286,74 @@ $(function () {
     var lang = document.querySelector('html');
     var inputEmail = document.querySelector('.sec-contato input[type=email]');
     var textarea = document.querySelector('.sec-contato textarea');
-    var btMenu = document.getElementById('bt-transl');
+    var btMenu = document.querySelectorAll('.bt-transl');
 
-    btMenu.setAttribute('data-locale', 'br');
+    btMenu.forEach((el) => {
+        el.setAttribute('data-locale', 'br');
+
+        el.addEventListener('click', function() {
+            console.log('clicou');
+            
+            if(lang.getAttribute('lang') != 'pt-br') {
+                lang.setAttribute('lang', 'pt-br');
+                btMenu.forEach((el) => {
+                    el.setAttribute('data-locale', 'en');
+                })
+                if(inputEmail !== null && textarea !== null) {
+                    inputEmail.setAttribute('placeholder', 'Seu e-mail');
+                    textarea.setAttribute('placeholder', 'Escreva sua mensagem ...');
+                }
+                
+                changeLocale('br');
+            } else {
+                lang.setAttribute('lang', 'en-US');
+                btMenu.forEach((el) => {
+                    el.setAttribute('data-locale', 'br');
+                })
     
+                if(inputEmail !== null && textarea !== null) { 
+                    inputEmail.setAttribute('placeholder', 'Your email');
+                    textarea.setAttribute('placeholder', 'Your message ...');
+                }
+    
+                changeLocale('en');
+            }
+        });
+    })
+
     $('.lang__bt').on('click', function() {
         var locale = $(this).data('locale');
         
         if(locale == 'br') {
             lang.setAttribute('lang', 'pt-br');
-            inputEmail.setAttribute('placeholder', 'Seu e-mail');
-            textarea.setAttribute('placeholder', 'Escreva sua mensagem ...');
-            btMenu.setAttribute('data-locale', 'en');
+            btMenu.forEach((el) => {
+                el.setAttribute('data-locale', 'en');
+            })
+            if(inputEmail !== null && textarea !== null) {
+                inputEmail.setAttribute('placeholder', 'Seu e-mail');
+                textarea.setAttribute('placeholder', 'Escreva sua mensagem ...');
+            }
+            
         } else {
             lang.setAttribute('lang', 'en-US');
-            inputEmail.setAttribute('placeholder', 'Your email');
-            textarea.setAttribute('placeholder', 'Your message ...');
-            btMenu.setAttribute('data-locale', 'br');
+            btMenu.forEach((el) => {
+                el.setAttribute('data-locale', 'br');
+            })
+
+            if(inputEmail !== null && textarea !== null) { 
+                inputEmail.setAttribute('placeholder', 'Your email');
+                textarea.setAttribute('placeholder', 'Your message ...');
+            }
         }
 
         changeLocale(locale);
-    });
-
-    
-    $(btMenu).on('click', function() {
-        
-        if(lang.getAttribute('lang') != 'pt-br') {
-            lang.setAttribute('lang', 'pt-br');
-            btMenu.setAttribute('data-locale', 'en');
-            inputEmail.setAttribute('placeholder', 'Seu e-mail');
-            textarea.setAttribute('placeholder', 'Escreva sua mensagem ...');
-            
-            changeLocale('br');
-        } else {
-            lang.setAttribute('lang', 'en-US');
-            btMenu.setAttribute('data-locale', 'br');
-            inputEmail.setAttribute('placeholder', 'Your email');
-            textarea.setAttribute('placeholder', 'Your message ...');
-
-            changeLocale('en');
-        }
     });
     
 
 });
 
 changeLocale('br');
+
+window.addEventListener('click', (e) => {
+    console.log(e.target)
+})
