@@ -136,6 +136,9 @@ $.i18n().load({
         'contato_msg_sucess': 'Mensagem enviada com sucesso!',
         'contato_msg_error': 'Oops! Não foi possível enviar sua mensagem, tente novamente mais tarde.',
 
+        //
+        'em_breve': 'Em breve.'
+
     },
     en: {
         // NAVBAR
@@ -261,6 +264,8 @@ $.i18n().load({
         'contato_msg_sucess': 'Message sent successfully!',
         'contato_msg_error': 'Oops! Your message could not be sent, please try again later.',
         
+        //
+        'em_breve': 'Coming soon.'
     }
 });
 

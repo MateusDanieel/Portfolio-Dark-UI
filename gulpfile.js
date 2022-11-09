@@ -34,8 +34,7 @@ function browserSyncReload(done) {
 function css() {
   return gulp
     .src([
-      //'./node_modules/normalize.css/normalize.css',
-      './docs/src/scss/*.scss'
+      './docs/src/scss/main.scss'
     ])
     .pipe(concat('style.min.css'))
     .pipe(postcss([atImport(), autoprefixer(), precss(), cssnano(), lost()]))
