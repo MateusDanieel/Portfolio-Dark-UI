@@ -2,14 +2,14 @@
 
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap'); 
     
-$dark-grey: #2D2E32;
-$dark-grey-alt: #25262D;
-$blue: #6473F4;
-$white: #FFF;
-$red: #FF4F4F;
-$green: #64F4AC;
-$yellow: #F7D387;
-$black: #000;
+$dark-grey: 45, 46, 50;
+$dark-grey-alt: 37, 38, 45;
+$blue: 100, 115, 244;
+$white: 255, 255, 255;
+$red: 255, 79, 79;
+$green: 100, 244, 172;
+$yellow: 247, 211, 135;
+$black: 0, 0, 0;
 
 @custom-media --xs (max-width: 767px);
 @custom-media --sm (max-width: 992px);
@@ -56,15 +56,16 @@ $black: #000;
 
 * {
     font-family: 'IBM Plex Mono', monospace;
-    color: $white;
-    box-sizing: border-box;    
+    color: rgb($white);
+    box-sizing: border-box;
+    line-height: 1.5;    
     
 }
 
 html {
     scroll-behavior: smooth;
     position: relative;
-    background: $dark-grey;
+    background: rgb($dark-grey);
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 
     @extend %scrollbar;
@@ -116,7 +117,7 @@ section {
     
     &::before {
         content: '';
-        background-color: $blue;
+        background-color: rgb($blue);
         width: 50px;
         height: 5px;
         position: absolute;

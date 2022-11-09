@@ -1,11 +1,11 @@
 .navbar {
-    background-color: $dark-grey;
+    background-color: rgb($dark-grey);
     padding: 30px 0;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    box-shadow: 1px 1px 10px $dark-grey-alt;
+    box-shadow: 1px 1px 10px rgb($dark-grey-alt);
     z-index: 999;
 
     .container {
@@ -39,7 +39,7 @@
 
         &::before {
             content: '</>';
-            color: $blue;
+            color: rgb($blue);
             font-weight: 600;
         }   
     }
@@ -105,7 +105,7 @@
 
                 &::after {
                     content: '';
-                    background-color: $blue;
+                    background-color: rgb($blue);
                     width: 50%;
                     height: 2px;
                     position: absolute;
@@ -125,7 +125,7 @@
                     transition: 0.3s;
 
                     @media (--xs) {
-                        color: $white;
+                        color: rgb($white);
                     }
 
                     &::after {
@@ -140,7 +140,7 @@
 }
     
 .sec-header {
-    background: $dark-grey;
+    background: rgb($dark-grey);
     width: 100%;
     
     .container {
@@ -198,7 +198,7 @@
             background-color: rgba($blue, .8);
             padding: 15px 30px;
             border-radius: 4px;
-            //text-transform: uppercase;
+            //text-transform: uppercase; 
             display: inline-block;
             font-size: 16px;
             font-weight: 400;
@@ -313,7 +313,7 @@
 }
 
 .sec-stacks {
-    background-color: $dark-grey;
+    background-color: rgb($dark-grey);
 
     .legenda {
         display: flex;
@@ -340,7 +340,7 @@
             margin-left: 15px;
 
             i {
-                color: $yellow;
+                color: rgb($yellow);
                 margin-right: 7.5px;
             }
         }
@@ -402,7 +402,7 @@
         .col {
             width: calc(100% / 4);
             text-align: center;
-            color: $white;
+            color: rgb($white);
             opacity: .4;
             transition: 0.3s;
             margin: 60px 0 0;
@@ -422,7 +422,7 @@
             .stars {
                 margin: 10px 0;
                 i {
-                    color: $yellow;
+                    color: rgb($yellow);
                 }
             }
 
@@ -470,8 +470,21 @@
 }
 
 .sec-portfolio {
-    background-color: $dark-grey-alt;
+    background-color: rgb($dark-grey-alt);
 
+    .wrap {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h2 {
+            margin: 40px 0 0; 
+            font-weight: 300;
+            font-style: italic;
+        }
+    }
+/*
     .wrapper {
         display: flex;
         flex-wrap: wrap;
@@ -583,7 +596,7 @@
             transition: 0.3s;
 
             &:hover {
-                background-color: $blue;
+                background-color: rgb($blue);
                 color: rgba($white, 1);
             }
         }
@@ -595,10 +608,11 @@
         }
 
     }
+    */
 }
 
 .sec-timeline {
-    background-color: $dark-grey;
+    background-color: rgb($dark-grey);
 
     .wrapper {
         width: 50%;
@@ -617,7 +631,7 @@
             top: 0;
             width: 4px;
             height: 100%;
-            background-color: $blue;
+            background-color: rgb($blue);
 
             @media (--xs) {
                 left: 12px;
@@ -643,8 +657,8 @@
             position: absolute;
             width: 20px;
             height: 20px;
-            background-color: $dark-grey;
-            border: 4px solid $blue;
+            background-color: rgb($dark-grey);
+            border: 4px solid rgb($blue);
             border-radius: 50%;
             left: -52px;
             top: 40px;
@@ -690,7 +704,7 @@
 }
 
 .sec-contato {
-    background-color: $dark-grey-alt;
+    background-color: rgb($dark-grey-alt);
 
     .container {
         display: flex;
@@ -727,7 +741,7 @@
                    align-items: center;
                    justify-content: flex-start;
                    padding: 30px 40px;
-                   background-color: $dark-grey;
+                   background-color: rgb($dark-grey);
                    border-radius: 8px;
                    transition: 0.3s;
                    
@@ -837,7 +851,7 @@
 
 .footer {
     text-align: center;
-    border-bottom: 5px solid $blue;
+    border-bottom: 5px solid rgb($blue);
 
     .lang {
         display: flex;
