@@ -34,7 +34,7 @@ function browserSyncReload(done) {
 function css() {
   return gulp
     .src([
-      './node_modules/normalize.css/normalize.css',
+      //'./node_modules/normalize.css/normalize.css',
       './app/src/scss/*.scss'
     ])
     .pipe(concat('style.min.css'))
@@ -53,7 +53,7 @@ function scripts() {
       './app/src/js/jquery.i18n.js',
       './app/src/js/jquery.i18n.messagestore.js',
       './app/src/js/main.js',
-      './app/src/js/i18n.min.js'
+      './app/src/js/i18n.js'
     ])
       .pipe(concat('script.min.js'))
       .pipe(uglify())
