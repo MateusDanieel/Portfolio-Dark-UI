@@ -137,7 +137,7 @@ $.i18n().load({
         'contato_msg_error': 'Oops! Não foi possível enviar sua mensagem, tente novamente mais tarde.',
 
         // PÁGINA PORTFÓLIO
-        
+        'pg_portolio_projetos_pessoais': 'Projetos Pessoais',
 
         //
         'em_breve': 'Em breve.'
@@ -259,6 +259,9 @@ $.i18n().load({
 
         'timeline_p_seventeen': 
         "In mid-July I joined ETEC's specialization course in smartphone application development, which I completed in December 2020. There I learned a bit of Flutter and developed some apps during this period. I always liked and was curious to learn a little about mobile, thanks to ETEC I was able to have a good introduction to this world.",
+
+        // PÁGINA PORTFÓLIO
+        'pg_portolio_projetos_pessoais': 'Personal Projects',
 
         // CONTATO
         'contato_title': 'Contact',
