@@ -4,6 +4,10 @@
         display: flex;
         justify-content: space-evenly;
 
+        @media (--xs) {
+            display: block;
+        }
+
         li {
             text-transform: uppercase;
             font-size: 24px;
@@ -11,6 +15,10 @@
             cursor: pointer;
             position: relative;
             transition: .3s;
+
+            @media (--xs) {
+                margin: 0 0 20px;
+            }
 
             &:hover, &.active {
                 color: rgba($white, 1);
@@ -30,6 +38,10 @@
                 position: absolute;
                 transition: .3s;
                 width: 50%;
+
+                @media (--xs) {
+                    width: 20%;
+                }
             }
         }
     }
@@ -51,6 +63,10 @@
                 padding: 20px;
                 border-radius: 4px;
                 margin: 0 0 1.6%;
+
+                @media (--xs) {
+                    width: 100%;
+                }
 
                 &:hover {
                     .project__thumb {
@@ -119,6 +135,10 @@
                     display: flex;
                     justify-content: space-between;
                     margin: 8px 0 15px;
+
+                    @media (--sm) {
+                        flex-wrap: wrap;
+                    }
                     
                     li {
                         font-style: italic;
