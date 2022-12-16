@@ -5,7 +5,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    box-shadow: 1px 1px 10px rgb($dark-grey-alt);
+    box-shadow: 1px 1px 10px rgb($dark-grey);
     z-index: 999;
 
     .container {
@@ -669,7 +669,7 @@
             display: block;
             position: absolute;
             border: 10px solid;
-            border-color: transparent #28292D transparent transparent;
+            border-color: transparent rgba(0, 0, 0, .1) transparent transparent;
             left: -20px;
             top: 44px;
         }

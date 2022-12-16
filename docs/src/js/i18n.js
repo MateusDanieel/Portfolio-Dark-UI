@@ -56,7 +56,7 @@ $.i18n().load({
         'stacks_git': 'GIT - Versionamento',
         'stacks_ide': "IDE's/Text Editors",
         'stacks_agile': 'Métodos Ágeis',
-        'stacks_xd': 'Adobe XD',
+        'stacks_xd': 'Adobe XD/Figma',
         'stacks_photoshop': 'Photoshop',
         'stacks_video': 'Edição de Vídeo',
         'stacks_hardware': 'Hardware',
@@ -136,6 +136,9 @@ $.i18n().load({
         'contato_msg_sucess': 'Mensagem enviada com sucesso!',
         'contato_msg_error': 'Oops! Não foi possível enviar sua mensagem, tente novamente mais tarde.',
 
+        // PÁGINA PORTFÓLIO
+        
+
         //
         'em_breve': 'Em breve.'
 
@@ -184,10 +187,10 @@ $.i18n().load({
         'stacks_git': 'GIT - Version Control',
         'stacks_ide': "IDE's/Text Editors",
         'stacks_agile': 'Agile Methodology',
-        'stacks_xd': 'Adobe XD',
+        'stacks_xd': 'Adobe XD/Figma',
         'stacks_photoshop': 'Photoshop',
         'stacks_video': 'Video Editing',
-        'stacks_hardware': 'Hardware',
+        'stacks_hardware': 'Hardware', 
         'stacks_ux_ui_design': 'UX/UI Design',
 
         // PORTFOLIO

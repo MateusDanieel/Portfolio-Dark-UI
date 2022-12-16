@@ -94,6 +94,34 @@
     });
 })();
 
+// portfólio
+(function() {
+    let menuItems = document.querySelectorAll('.sec-pg-portfolio .lst_menu li');
+    let contentItems = document.querySelectorAll('.sec-pg-portfolio .lst_items li');
+
+    if (menuItems && contentItems) {
+        menuItems.forEach((el, i, arr) => {
+            el.addEventListener('click', () => {
+                arr.forEach((arr_el) => {
+                    if(arr_el.classList.contains('active')) {
+                        arr_el.classList.remove('active')
+                    }
+                });
+
+                contentItems.forEach((arr_el) => {
+                    if(arr_el.classList.contains('active')) {
+                        arr_el.classList.remove('active')
+                    }
+                });
+
+                el.classList.add('active');
+                contentItems[i].classList.add('active');
+
+            });
+        });
+    }
+})();
+
 // e-mail
 
 var msgSucess = document.querySelector(".my-form-status.sucess");
