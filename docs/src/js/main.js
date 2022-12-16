@@ -97,7 +97,7 @@
 // portfólio
 (function() {
     let menuItems = document.querySelectorAll('.sec-pg-portfolio .lst_menu li');
-    let contentItems = document.querySelectorAll('.sec-pg-portfolio .lst_items li');
+    let contentItems = document.querySelectorAll('.sec-pg-portfolio .lst_items > li');
 
     if (menuItems && contentItems) {
         menuItems.forEach((el, i, arr) => {

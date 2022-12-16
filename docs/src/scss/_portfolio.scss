@@ -38,6 +38,7 @@
         > li {
             display: none;
             justify-content: space-evenly;
+            flex-wrap: wrap;
             margin: 60px 0 0;
 
             &.active {
@@ -45,15 +46,52 @@
             }
 
             .project {
-                width: calc(99% / 3);
+                width: calc(95% / 3);
                 background-color: rgb($dark-grey-alt);
                 padding: 20px;
+                border-radius: 4px;
+                margin: 0 0 1.6%;
+
+                &:hover {
+                    .project__thumb {
+                        &::after {
+                            background-color: rgba($dark-grey-alt, .4);
+                        }
+
+                        img {
+                            filter: grayscale(0);
+                        }
+                    }
+                }
 
                 &__thumb {
                     line-height: 0;
+                    position: relative;
+                    width: 100%;
+                    height: 150px;
+                    border-radius: 4px;
+                    overflow: hidden;
 
                     img {
                         max-width: 100%;
+                        filter: grayscale(1);
+                        transition: .3s;
+                    }
+
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        background-color: rgba($dark-grey-alt, .7);
+                        width: 100%;
+                        height: 100%;
+                        left: 0;
+                        top: 0;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 36px;
+                        font-weight: 700;
+                        transition: .3s;
                     }
                 }
 
@@ -63,7 +101,8 @@
                     font-weight: 300;
                     font-style: italic;
                     text-align: center;
-                    margin: 20px 0 15px;
+                    margin: 5px 0 0;
+                    line-height: 1;
 
                     b {
                         font-style: normal;
@@ -71,31 +110,33 @@
                         color: rgba(255, 255, 255, 1);
 
                         &::after {
-                            content: ":";
+                            content: "";
                         }
                     }
                 }
 
                 &__stacks {
                     display: flex;
-                    justify-content: center;
-                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    margin: 8px 0 15px;
                     
                     li {
                         font-style: italic;
-                        font-size: 14px;
+                        font-size: 12px;
                         background-color: rgba(255, 255, 255, .1);
-                        padding: 5px 15px;
+                        padding: 5px 10px;
                         border-radius: 4px;
                         text-transform: uppercase;
-                        margin: 5px;
                     }
                 }
 
                 &__links {
                     display: flex;
-                    justify-content: center;
-                    margin: 30px 0 0;
+                    justify-content: space-between;
+
+                    li {
+                        width: 49%;
+                    }
 
                     a {
                         background-color: rgba($blue, .8);
@@ -105,12 +146,19 @@
                         display: inline-block;
                         font-style: italic;
                         font-weight: 400;
-                        padding: 10px 20px;
+                        padding: 10px 0;
                         transition: .3s;
-                        margin: 0 10px;
+                        width: 100%;
+                        text-align: center;
 
                         &:hover {
                             background-color: rgba($blue, 1);
+                        }
+
+                        &[disabled] {
+                            opacity: .4;
+                            background-color: rgba($blue, 1);
+                            cursor: no-drop;
                         }
                     }
                 }
